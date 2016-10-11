@@ -1,0 +1,1 @@
+I am the error raised when no similarity computer is defined to computer the similarity of the entities compared.

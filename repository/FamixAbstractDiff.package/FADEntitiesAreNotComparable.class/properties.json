@@ -1,0 +1,14 @@
+{
+	"category" : "FamixAbstractDiff-Errors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 10/11/2016 10:46",
+	"instvars" : [
+		 ],
+	"name" : "FADEntitiesAreNotComparable",
+	"pools" : [
+		 ],
+	"super" : "FADError",
+	"type" : "normal" }
