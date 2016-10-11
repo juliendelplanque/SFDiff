@@ -1,4 +1,3 @@
 *FamixAbstractDiff
 similarityComputer
-	^ (FADSimilarityComputerStorage current
-			similarityComputerFor: self)
+	^ self class similarityComputer

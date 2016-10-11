@@ -4,4 +4,7 @@ add: aFADSimilarityComputer
 	 See FADSimilarityComputer class comment to kinow more about when there is equality."
 	(aFADSimilarityComputer isKindOf: FADSimilarityComputer)
 		ifFalse: [ self error: 'Can only add objects that are kind of FADSimilarityComputer.' ].
-	self similarityComputers add: aFADSimilarityComputer
+		
+	(self similarityComputers anySatisfy: [ :any | any = aFADSimilarityComputer ])
+		ifTrue: [ self similarityComputers at: (self similarityComputers indexOf: aFADSimilarityComputer) put: aFADSimilarityComputer ]
+		ifFalse: [ self similarityComputers add: aFADSimilarityComputer ].
