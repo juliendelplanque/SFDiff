@@ -1,0 +1,1 @@
+I store the similarity defined by the user.

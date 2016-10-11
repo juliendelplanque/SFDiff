@@ -1,0 +1,16 @@
+{
+	"category" : "FamixAbstractDiff-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 10/10/2016 13:36",
+	"instvars" : [
+		"name",
+		"weight",
+		"evaluator" ],
+	"name" : "FADCriterion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
