@@ -1,0 +1,14 @@
+{
+	"category" : "FamixAbstractDiff-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"criterion" ],
+	"name" : "FADCriterionTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
