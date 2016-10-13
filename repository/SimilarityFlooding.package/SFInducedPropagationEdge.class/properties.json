@@ -1,0 +1,16 @@
+{
+	"category" : "SimilarityFlooding",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 10/13/2016 09:54",
+	"instvars" : [
+		"from",
+		"to",
+		"weight" ],
+	"name" : "SFInducedPropagationEdge",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

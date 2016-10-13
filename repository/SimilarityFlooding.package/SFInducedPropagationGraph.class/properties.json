@@ -1,0 +1,19 @@
+{
+	"category" : "SimilarityFlooding",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 10/13/2016 09:54",
+	"instvars" : [
+		"edges",
+		"sigmaValues",
+		"delta",
+		"epsilon",
+		"iterationCount",
+		"maximalIterationCount" ],
+	"name" : "SFInducedPropagationGraph",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
