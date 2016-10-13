@@ -1,1 +1,1 @@
-I am an edge of the SFInducedPropagationFGraph.
+I am an edge of the SFInducedPropagationGraph.

@@ -1,0 +1,1 @@
+I am an abstract edge for graphs used in Similarity Flooding algorithm.

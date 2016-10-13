@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JulienDelplanque 10/13/2016 09:59",
+	"commentStamp" : "JulienDelplanque 10/13/2016 10:07",
 	"instvars" : [
-		"weight" ],
-	"name" : "SFInducedPropagationEdge",
+		 ],
+	"name" : "SFPairwiseConnectivityGraph",
 	"pools" : [
 		 ],
-	"super" : "SFEdge",
+	"super" : "SFEdgeBasedGraph",
 	"type" : "normal" }

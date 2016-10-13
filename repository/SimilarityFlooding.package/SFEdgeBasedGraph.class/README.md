@@ -1,0 +1,1 @@
+I am an abstract graph that store a list of edges.

@@ -1,0 +1,1 @@
+I am a pairwise connectivity graph as described in the paper: "Similarity flooding: Aversatile Graph Matching Algorithm and its Application to Schema Matching."
