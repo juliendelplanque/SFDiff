@@ -10,7 +10,8 @@
 		"delta",
 		"epsilon",
 		"iterationCount",
-		"maximalIterationCount" ],
+		"maximalIterationCount",
+		"neighbourhoodDict" ],
 	"name" : "SFInducedPropagationGraph",
 	"pools" : [
 		 ],

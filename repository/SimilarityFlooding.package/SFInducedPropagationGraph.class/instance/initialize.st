@@ -5,4 +5,5 @@ initialize
 		delta: Float infinity;
 		epsilon: self defaultEpsilon;
 		maximalIterationCount: self defaultMaximalIterationCount.
-	iterationCount := 0
+	iterationCount := 0.
+	neighbourhoodDict := Dictionary new
