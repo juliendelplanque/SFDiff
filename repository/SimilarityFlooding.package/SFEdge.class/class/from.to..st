@@ -1,7 +1,6 @@
 instance creation
-from: aNode to: anotherNode named: aString
+from: aNode to: anotherNode
 	^ self new
 		from: aNode;
 		to: anotherNode;
-		name: aString;
 		yourself

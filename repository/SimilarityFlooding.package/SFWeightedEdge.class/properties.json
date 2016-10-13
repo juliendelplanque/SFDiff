@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JulienDelplanque 10/13/2016 09:59",
+	"commentStamp" : "JulienDelplanque 10/13/2016 11:34",
 	"instvars" : [
 		"weight" ],
-	"name" : "SFInducedPropagationEdge",
+	"name" : "SFWeightedEdge",
 	"pools" : [
 		 ],
 	"super" : "SFEdge",

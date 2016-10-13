@@ -1,0 +1,14 @@
+{
+	"category" : "SimilarityFlooding",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 10/13/2016 11:43",
+	"instvars" : [
+		 ],
+	"name" : "SFEdgeNamedGraph",
+	"pools" : [
+		 ],
+	"super" : "SFEdgeBasedGraph",
+	"type" : "normal" }
