@@ -1,0 +1,16 @@
+{
+	"category" : "SimilarityFlooding",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"baseEntity",
+		"targetEntity",
+		"sigmaValue" ],
+	"name" : "SFMatchCandidate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

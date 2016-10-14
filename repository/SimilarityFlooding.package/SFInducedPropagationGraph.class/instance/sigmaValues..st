@@ -1,3 +1,3 @@
 accessing
-sigmaValues: anObject
-	sigmaValues := anObject
+sigmaValues: aDictionary
+	sigmaValues := aDictionary

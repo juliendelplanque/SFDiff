@@ -4,12 +4,8 @@ doIteration
 	"Compute new sigma values for each node."
 	newSigmaValues := Dictionary new.
 	self nodes do: [ :node |
-		|sigma|
-		sigma := (self neighbourhoodOf: node)
-						inject: (self sigmaValueOf: node)
-						into: [ :sum :currentEdge |
-							sum + ((self sigmaValueOf: currentEdge from) * currentEdge weight) ].
-		newSigmaValues at: node put: sigma ].
+		newSigmaValues at: node put: (sigmaValueBlock value: node value: self) ].
+	
 	"Normalize new sigmas."
 	maxSigma := newSigmaValues values max.
 	newSigmaValues keysAndValuesDo: [ :node :sigma |
