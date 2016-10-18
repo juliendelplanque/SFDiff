@@ -1,0 +1,1 @@
+From two moose models, find match between entities that are strictely equals.

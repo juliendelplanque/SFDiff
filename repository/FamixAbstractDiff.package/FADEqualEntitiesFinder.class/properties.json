@@ -1,0 +1,16 @@
+{
+	"category" : "FamixAbstractDiff-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 10/18/2016 13:48",
+	"instvars" : [
+		"modelA",
+		"modelB",
+		"matchedEntities" ],
+	"name" : "FADEqualEntitiesFinder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
