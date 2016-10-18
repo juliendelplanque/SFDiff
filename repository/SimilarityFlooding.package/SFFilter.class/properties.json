@@ -4,12 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JulienDelplanque 10/14/2016 13:47",
+	"commentStamp" : "JulienDelplanque 10/14/2016 13:49",
 	"instvars" : [
-		"baseEntity",
-		"targetEntity",
-		"sigmaValue" ],
-	"name" : "SFMatchCandidate",
+		 ],
+	"name" : "SFFilter",
 	"pools" : [
 		 ],
 	"super" : "Object",

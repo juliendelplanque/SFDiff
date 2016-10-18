@@ -1,0 +1,15 @@
+{
+	"category" : "SimilarityFlooding",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 10/14/2016 13:50",
+	"instvars" : [
+		"baseModel",
+		"targetModel" ],
+	"name" : "SFSelectThreshold",
+	"pools" : [
+		 ],
+	"super" : "SFFilter",
+	"type" : "normal" }

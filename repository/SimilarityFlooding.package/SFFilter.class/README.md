@@ -1,0 +1,1 @@
+I am an abstract filter to select the best matches in a list of SFMatchCandidates.
