@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "JulienDelplanque 10/13/2016 10:07",
 	"instvars" : [
-		 ],
+		"incomingEdges",
+		"outgoingEdges" ],
 	"name" : "SFPairwiseConnectivityGraph",
 	"pools" : [
 		 ],
