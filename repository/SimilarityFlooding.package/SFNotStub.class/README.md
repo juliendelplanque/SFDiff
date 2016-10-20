@@ -1,0 +1,1 @@
+I remove matches concerning stub entities from the result.
