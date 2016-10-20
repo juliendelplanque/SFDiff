@@ -13,4 +13,7 @@ buildFromModel: aMooseModel
 			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ].
 	(aMooseModel allWithType: FAMIXReference)
 		do: [ :association |
+			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ].
+	(aMooseModel allWithType: FAMIXAccess)
+		do: [ :association |
 			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ]
