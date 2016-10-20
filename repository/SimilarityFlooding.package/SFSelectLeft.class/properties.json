@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JulienDelplanque 10/14/2016 13:49",
+	"commentStamp" : "JulienDelplanque 10/19/2016 11:55",
 	"instvars" : [
-		"baseModel",
-		"targetModel" ],
-	"name" : "SFFilter",
+		 ],
+	"name" : "SFSelectLeft",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SFFilter",
 	"type" : "normal" }

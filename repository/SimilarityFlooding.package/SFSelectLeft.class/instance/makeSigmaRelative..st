@@ -1,5 +1,5 @@
 filtering
-makeProposalsRelative: aDictionary
+makeSigmaRelative: aDictionary
 	aDictionary keysAndValuesDo: [ :entity :proposals |
 		| max |
 		max := (proposals maxFor: #second) second.

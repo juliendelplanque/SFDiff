@@ -1,0 +1,1 @@
+Remove the match candidates that do not have the same target and base entity type.

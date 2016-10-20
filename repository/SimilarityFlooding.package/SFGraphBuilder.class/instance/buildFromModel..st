@@ -1,9 +1,16 @@
 as yet unclassified
 buildFromModel: aMooseModel
-	(aMooseModel entities select: #isPackage) do: [ :package | package accept: self ].
+	(aMooseModel entities select: #isPackage) do: [ :package | 
+		graph addEdge: (SFNamedEdge from: aMooseModel to: package named: 'ModelToPackage').
+		package accept: self ].
 	
-	(aMooseModel allWithSubTypesOf: FAMIXAssociation)
+	"(aMooseModel allWithSubTypesOf: FAMIXAssociation)
 		do: [ :association |
-			(association isInvocation and: [ association isAPotentialInvocation ])
-				ifFalse: [ 
-					graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ] ]
+			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ]."
+	
+	(aMooseModel allWithType: FAMIXInheritance)
+		do: [ :association |
+			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ].
+	(aMooseModel allWithType: FAMIXReference)
+		do: [ :association |
+			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ]
