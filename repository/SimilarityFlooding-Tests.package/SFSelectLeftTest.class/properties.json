@@ -1,0 +1,16 @@
+{
+	"category" : "SimilarityFlooding-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "SFTestResources classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "SFSelectLeftTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "SFTestResources",
+	"type" : "normal" }
