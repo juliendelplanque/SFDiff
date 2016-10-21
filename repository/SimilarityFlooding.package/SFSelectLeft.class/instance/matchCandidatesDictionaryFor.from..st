@@ -7,5 +7,10 @@ matchCandidatesDictionaryFor: entities from: matchCandidates
 			at: e
 			put: (matchCandidates
 						select: [ :m | m baseEntity = e ]
-						thenCollect: [ :m | { m targetEntity . m sigmaValue } ]) asOrderedCollection ].
+						thenCollect: [ :m | 
+							SFMatchCandidateWithRelativeSigma
+								base: m baseEntity
+								target: m targetEntity
+								sigmaValue: m sigmaValue
+								relative: m sigmaValue]) ].
 	^ matchCandidatesDictionary

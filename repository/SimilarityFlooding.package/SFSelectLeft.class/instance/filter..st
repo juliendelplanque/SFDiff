@@ -7,6 +7,6 @@ filter: matchCandidates
 	result := OrderedCollection new.
 	matchCandidatesDict keysAndValuesDo: [ :entity :possibleMatches |
 		|max|
-		max := possibleMatches maxFor: #second.
-		result add: { entity . max first . max second } ].
+		max := possibleMatches maxFor: #relativeSigmaValue.
+		result add: max ].
 	^ result
