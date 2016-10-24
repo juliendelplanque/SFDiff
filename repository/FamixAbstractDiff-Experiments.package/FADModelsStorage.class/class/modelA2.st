@@ -1,0 +1,3 @@
+models
+anObject
+	accessor := anObject

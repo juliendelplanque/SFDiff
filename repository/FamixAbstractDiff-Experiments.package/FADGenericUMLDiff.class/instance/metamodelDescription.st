@@ -1,0 +1,3 @@
+accessing
+metamodelDescription
+	^ metamodelDescription

@@ -1,0 +1,14 @@
+{
+	"category" : "FamixAbstractDiff-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FADExperimentClassSimilarity",
+	"pools" : [
+		 ],
+	"super" : "FADSimilarityComputer",
+	"type" : "normal" }

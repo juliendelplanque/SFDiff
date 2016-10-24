@@ -1,0 +1,3 @@
+entity accepted
+entityAccepted
+	^ FAMIXClass
