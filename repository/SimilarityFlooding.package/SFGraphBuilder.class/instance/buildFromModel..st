@@ -4,11 +4,13 @@ buildFromModel: aMooseModel
 		graph addEdge: (SFNamedEdge from: aMooseModel to: package named: 'ModelToPackage').
 		package accept: self ].
 	
-	"(aMooseModel allWithSubTypesOf: FAMIXAssociation)
+	(aMooseModel allWithSubTypesOf: FAMIXAssociation)
 		do: [ :association |
-			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ]."
+			(association class = FAMIXInvocation)
+				ifTrue: [ association candidates do: [ :to | graph addEdge: (SFNamedEdge from: association sender to: to named: association className) ] ]
+				ifFalse: [ graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ] ].
 	
-	(aMooseModel allWithType: FAMIXInheritance)
+	"(aMooseModel allWithType: FAMIXInheritance)
 		do: [ :association |
 			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ].
 	(aMooseModel allWithType: FAMIXReference)
@@ -16,4 +18,4 @@ buildFromModel: aMooseModel
 			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ].
 	(aMooseModel allWithType: FAMIXAccess)
 		do: [ :association |
-			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ]
+			graph addEdge: (SFNamedEdge from: association from to: association to named: association className) ]"
