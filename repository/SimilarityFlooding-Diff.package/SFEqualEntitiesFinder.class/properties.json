@@ -1,0 +1,16 @@
+{
+	"category" : "SimilarityFlooding-Diff",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 10/26/2016 09:16",
+	"instvars" : [
+		"modelA",
+		"modelB",
+		"matchedEntities" ],
+	"name" : "SFEqualEntitiesFinder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

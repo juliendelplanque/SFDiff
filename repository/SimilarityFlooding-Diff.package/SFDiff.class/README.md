@@ -1,0 +1,1 @@
+I take two MooseModels and compute the difference (delta) between them using the similarity flooding algorithm and SFEqualEntitiesFinder.
