@@ -25,7 +25,6 @@ generateMoveAndRenameChangesFromCandidates: matchCandidates
 										baseEntity: match baseEntity;
 										targetEntity: match targetEntity;
 										yourself) ] ] ].
-	self halt.
 	newMatches keysAndValuesDo: [ :key :value |
 		self changes removeAllSuchThat: [ :change | change baseEntity = key or: [ change targetEntity = value ] ].
 		self changes add: (FamixVersionChange new
