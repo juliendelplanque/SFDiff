@@ -1,0 +1,16 @@
+{
+	"category" : "SimilarityFlooding-Evaluator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mseDirectory",
+		"renrakuV0100Model",
+		"renrakuV0110Model" ],
+	"name" : "SFDiffEvaluator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
