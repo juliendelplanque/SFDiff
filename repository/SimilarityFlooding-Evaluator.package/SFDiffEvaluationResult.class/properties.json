@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JulienDelplanque 11/7/2016 11:40",
+	"commentStamp" : "JulienDelplanque 11/7/2016 11:39",
 	"instvars" : [
-		"mseDirectory",
-		"renrakuV0100Model",
-		"renrakuV0110Model" ],
-	"name" : "SFDiffEvaluator",
+		"expectedChanges",
+		"actualChanges" ],
+	"name" : "SFDiffEvaluationResult",
 	"pools" : [
 		 ],
 	"super" : "Object",
