@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JulienDelplanque 11/7/2016 11:40",
+	"commentStamp" : "JulienDelplanque 11/7/2016 14:01",
 	"instvars" : [
 		 ],
-	"name" : "SFDiffEvaluator",
+	"name" : "SFFamixDiffEvaluator",
 	"pools" : [
 		 ],
 	"super" : "SFEvaluator",

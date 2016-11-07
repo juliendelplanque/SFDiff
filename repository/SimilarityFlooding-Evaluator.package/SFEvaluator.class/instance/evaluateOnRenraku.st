@@ -1,0 +1,3 @@
+evaluation
+evaluateOnRenraku
+	^ self subclassResponsibility
