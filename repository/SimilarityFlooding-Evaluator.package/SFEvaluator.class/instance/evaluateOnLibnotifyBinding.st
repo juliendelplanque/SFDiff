@@ -1,0 +1,3 @@
+evaluation
+evaluateOnLibnotifyBinding
+	^ self subclassResponsibility
