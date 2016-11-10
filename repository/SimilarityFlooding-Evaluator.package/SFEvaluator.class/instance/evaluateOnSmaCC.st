@@ -1,0 +1,3 @@
+evaluation
+evaluateOnSmaCC
+	^ self subclassResponsibility

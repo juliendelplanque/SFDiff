@@ -12,7 +12,9 @@
 		"renoirStV160Model",
 		"renoirStV200Model",
 		"libnotifyBindingCommit1Model",
-		"libnotifyBindingCommit2Model" ],
+		"libnotifyBindingCommit2Model",
+		"smaCCCommit1Model",
+		"smaCCCommit2Model" ],
 	"name" : "SFEvaluator",
 	"pools" : [
 		 ],
