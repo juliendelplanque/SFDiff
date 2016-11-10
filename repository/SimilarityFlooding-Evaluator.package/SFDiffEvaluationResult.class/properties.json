@@ -8,7 +8,8 @@
 	"instvars" : [
 		"expectedChanges",
 		"actualChanges",
-		"timeToCompute" ],
+		"timeToCompute",
+		"diffName" ],
 	"name" : "SFDiffEvaluationResult",
 	"pools" : [
 		 ],

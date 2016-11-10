@@ -14,7 +14,7 @@ famixDiffEvaluateFor: baseModel and: targetModel with: expectedChanges
 	"Only these kind of entities are in the expected changes."
 	actualChanges := diff changes values select: [ :change | {FAMIXClass . FAMIXMethod . FAMIXAttribute} includes: change entity class ]. 
 	
-	^ SFDiffEvaluationResult new
+	^ self createDiffEvaluationResult
 			expectedChanges: expectedChanges;
 			actualChanges: (actualChanges reject: #isVersion);
 			timeToCompute: timeToRun;
