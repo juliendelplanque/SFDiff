@@ -1,0 +1,22 @@
+evaluation
+sfDiffEvaluateFor: baseModel and: targetModel with: expectedChanges
+	"Evaluate the diff on base model and target model with the expected changes.
+	 Returns a SFDiffEvaluationResult."
+	| diff actualChanges timeToRun |
+	diff := nil. "Avoid warning: 'Temporaries readbefore written', this is done deliberately."
+	timeToRun := [
+		diff := SFDiff new
+					baseModel: baseModel;
+					targetModel: targetModel;
+					matchThreshold: 0.001;
+					computeDiff;
+					yourself
+	] timeToRun.
+	"Only these kind of entities are in the expected changes."
+	actualChanges := diff changes select: [ :change | {FAMIXClass . FAMIXMethod . FAMIXAttribute} includes: change entity class ]. 
+	
+	^ SFDiffEvaluationResult new
+			expectedChanges: expectedChanges;
+			actualChanges: (actualChanges reject: #isVersion);
+			timeToCompute: timeToRun;
+			yourself
