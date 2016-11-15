@@ -1,6 +1,5 @@
 evaluation
 smaCCExpectedChanges
-	self flag: #todo.
 	^ { 
 		FamixAddChange new
 			entity: (self smaCCCommit2Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'category' and: [ e belongsTo name = 'SmaCCSmalltalkCodeGenerator' ] ] ]);

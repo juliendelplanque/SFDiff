@@ -1,0 +1,3 @@
+evaluation
+evaluateOnTexasHoldemPokerAI
+	^ self subclassResponsibility
