@@ -1,0 +1,3 @@
+evaluation
+evaluateOnTexasHoldemPokerAI
+	^ self famixDiffEvaluateFor: self texasHoldemPokerAICommit1Model and: self texasHoldemPokerAICommit2Model with: self texasHoldemPokerAIExpectedChanges
