@@ -14,7 +14,9 @@
 		"libnotifyBindingCommit1Model",
 		"libnotifyBindingCommit2Model",
 		"smaCCCommit1Model",
-		"smaCCCommit2Model" ],
+		"smaCCCommit2Model",
+		"texasHoldemPokerAICommit1Model",
+		"texasHoldemPokerAICommit2Model" ],
 	"name" : "SFEvaluator",
 	"pools" : [
 		 ],
