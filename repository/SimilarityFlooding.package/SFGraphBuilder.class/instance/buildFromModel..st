@@ -1,4 +1,4 @@
-as yet unclassified
+building
 buildFromModel: aMooseModel
 	(aMooseModel entities select: #isPackage) do: [ :package | 
 		graph addEdge: (SFNamedEdge from: aMooseModel to: package named: 'ModelToPackage').
