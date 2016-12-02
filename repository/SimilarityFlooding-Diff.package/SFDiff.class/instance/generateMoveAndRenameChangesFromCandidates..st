@@ -18,7 +18,7 @@ generateMoveAndRenameChangesFromCandidates: matchCandidates
 										baseEntity: match baseEntity; 
 										targetEntity: match targetEntity;
 										yourself) ].
-				(match baseEntity parentEntity isEqualTo: match targetEntity parentEntity)
+				(self areParentEntitiesEqualsFor: match baseEntity and: match targetEntity)
 					ifFalse: [ 
 						self changes
 							add: (FamixMoveChange new

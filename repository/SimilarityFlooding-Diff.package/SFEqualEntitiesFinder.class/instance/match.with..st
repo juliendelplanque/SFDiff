@@ -2,9 +2,17 @@ finding
 match: modelAEntities with: modelBEntities
 	modelAEntities do: [ :entityA |
 		modelBEntities
-			detect: [ :entityB | entityA isEqualTo: entityB ]
+			detect: [ :entityB | (entityA privateState attributeAt: #sfMarked ifAbsent: [ false ]) not and: [ entityA isEqualTo: entityB ] ]
 			ifFound: [ :entityB |
+				entityA privateState attributeAt: #sfMarked put: true.
+				entityB privateState attributeAt: #sfMarked put: true.
 				self 
 					addMatchedEntities:  entityA -> entityB;
-					match: (self namedEntitiesOfModelA select: [ :e | e parentEntity = entityA ]) entities
-					with: (self namedEntitiesOfModelB select: [:e | e parentEntity = entityB ]) entities ] ]
+					match: (entityA class childrenAccessors
+								inject: OrderedCollection new
+								into: [ :union :selector |
+									union union: (selector value: entityA) ])
+					with: (entityB class childrenAccessors
+								inject: OrderedCollection new
+								into: [ :union :selector |
+									union union: (selector value: entityB) ]) ] ]

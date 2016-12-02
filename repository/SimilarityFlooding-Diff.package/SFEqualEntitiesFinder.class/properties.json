@@ -2,6 +2,7 @@
 	"category" : "SimilarityFlooding-Diff",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "SFTHelper classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "JulienDelplanque 10/26/2016 09:16",
@@ -13,4 +14,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "SFTHelper",
 	"type" : "normal" }
