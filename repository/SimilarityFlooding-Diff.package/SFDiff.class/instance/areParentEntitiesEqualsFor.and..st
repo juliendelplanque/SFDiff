@@ -5,6 +5,6 @@ areParentEntitiesEqualsFor: anEntity and: anotherEntity
 	anotherEntityParents := self parentEntitiesOf: anEntity.
 	anEntityParents do: [ :entityParent |
 		anotherEntityParents
-			detect: [ :anotherEntityParent | entityParent isEqualTo: anotherEntityParent ]
+			detect: [ :anotherEntityParent | entityParent sfIsEqualTo: anotherEntityParent ]
 			ifNone: [ ^ false ] ].
 	^ true
