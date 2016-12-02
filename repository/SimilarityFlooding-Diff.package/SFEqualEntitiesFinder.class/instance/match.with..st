@@ -8,11 +8,5 @@ match: modelAEntities with: modelBEntities
 				entityB privateState attributeAt: #sfMarked put: true.
 				self 
 					addMatchedEntities:  entityA -> entityB;
-					match: (entityA class childrenAccessors
-								inject: OrderedCollection new
-								into: [ :union :selector |
-									union union: (selector value: entityA) ])
-					with: (entityB class childrenAccessors
-								inject: OrderedCollection new
-								into: [ :union :selector |
-									union union: (selector value: entityB) ]) ] ]
+					match: (self childrenEntitiesOf: entityA)
+					with: (self childrenEntitiesOf: entityB) ] ]
