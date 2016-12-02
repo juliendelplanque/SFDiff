@@ -1,8 +1,8 @@
 diffing
 computeDiff
 	| baseGraph targetGraph matches pairwise inducedPropagation |
-	baseGraph := SFGraphBuilder graphBuiltFromModel:self baseModel.
-	targetGraph := SFGraphBuilder graphBuiltFromModel: self targetModel.
+	baseGraph := SFGenericGraphBuilder graphBuiltFromModel:self baseModel.
+	targetGraph := SFGenericGraphBuilder graphBuiltFromModel: self targetModel.
 	matches := SFEqualEntitiesFinder new
 					modelA: self baseModel;
 					modelB: self targetModel;
