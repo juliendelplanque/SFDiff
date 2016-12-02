@@ -1,0 +1,1 @@
+I am a graph builder that only rely on the model meta-model to build a SFEdgeNamedGraph.

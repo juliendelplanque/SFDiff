@@ -1,5 +1,5 @@
 graph building
 graphBuiltFromModel: aMooseModel
-	^ SFGraphBuilder new
+	^ self new
 		buildFromModel: aMooseModel;
 		graph

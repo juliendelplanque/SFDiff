@@ -1,0 +1,1 @@
+I am an abstract SFEdgeNamedGraph builder for a FAMIX model.

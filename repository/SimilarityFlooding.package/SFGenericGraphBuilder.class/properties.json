@@ -1,0 +1,16 @@
+{
+	"category" : "SimilarityFlooding",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "SFTHelper classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 12/2/2016 15:36",
+	"instvars" : [
+		"buildStack" ],
+	"name" : "SFGenericGraphBuilder",
+	"pools" : [
+		 ],
+	"super" : "SFAbstractGraphBuilder",
+	"traitcomposition" : "SFTHelper",
+	"type" : "normal" }

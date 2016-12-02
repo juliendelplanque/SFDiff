@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "JulienDelplanque 10/13/2016 11:52",
+	"commentStamp" : "JulienDelplanque 12/2/2016 15:34",
 	"instvars" : [
-		 ],
-	"name" : "SFGraphBuilder",
+		"graph" ],
+	"name" : "SFAbstractGraphBuilder",
 	"pools" : [
 		 ],
-	"super" : "SFAbstractGraphBuilder",
+	"super" : "FAMIXVisitor",
 	"type" : "normal" }
