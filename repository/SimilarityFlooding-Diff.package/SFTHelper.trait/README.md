@@ -1,1 +1,0 @@
-I hold helper methods for SFDiff classes.
