@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfSimilarityFlooding",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfSimilarityFlooding",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
