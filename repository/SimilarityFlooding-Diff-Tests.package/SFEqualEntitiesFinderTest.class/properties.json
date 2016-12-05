@@ -1,0 +1,14 @@
+{
+	"category" : "SimilarityFlooding-Diff-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"finder" ],
+	"name" : "SFEqualEntitiesFinderTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
