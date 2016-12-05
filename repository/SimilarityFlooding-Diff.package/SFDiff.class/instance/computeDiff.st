@@ -4,8 +4,8 @@ computeDiff
 	baseGraph := SFGenericGraphBuilder graphBuiltFromModel:self baseModel.
 	targetGraph := SFGenericGraphBuilder graphBuiltFromModel: self targetModel.
 	matches := SFEqualEntitiesFinder new
-					modelA: self baseModel;
-					modelB: self targetModel;
+					baseModel: self baseModel;
+					targetModel: self targetModel;
 					findEqualEntities.
 	pairwise := baseGraph pairwiseConnectivityGraphWith: targetGraph knowingMatches: matches.
 	inducedPropagation := pairwise asInducedPropagationGraph.

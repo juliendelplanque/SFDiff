@@ -1,3 +1,3 @@
 accessing - computed
 namedEntitiesOfModelA
-	^ self namedEntitiesOfModel: self modelA
+	^ self namedEntitiesOfModel: self baseModel

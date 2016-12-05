@@ -1,7 +1,7 @@
 diffing
 retryEqualMatchFor: baseEntity and: targetEntity
 	^ SFEqualEntitiesFinder new
-			modelA: self baseModel;
-			modelB: self targetModel;
+			baseModel: self baseModel;
+			targetModel: self targetModel;
 			match: (self childrenEntitiesOf: baseEntity) with: (self childrenEntitiesOf: targetEntity);
 			matchedEntities
