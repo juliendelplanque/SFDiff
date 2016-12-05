@@ -10,7 +10,6 @@
 		"baseModel",
 		"targetModel",
 		"changes",
-		"equalityFinderSelector",
 		"matchThreshold" ],
 	"name" : "SFDiff",
 	"pools" : [
