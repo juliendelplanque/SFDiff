@@ -10,7 +10,8 @@ computeDiff
 	pairwise := baseGraph pairwiseConnectivityGraphWith: targetGraph knowingMatches: matches.
 	inducedPropagation := pairwise asInducedPropagationGraph.
 	inducedPropagation
-		initialSigmaValues: (inducedPropagation nodes collect: [ :node | node -> 1 ]) asDictionary;
-		useFormulaC;
+		initialSigmaValues: (inducedPropagation nodes collect: [ :node | node -> 1 ]) asDictionary.
+	self inducedPropagationGraphFormulaSelector value: inducedPropagation.
+	inducedPropagation
 		similarityFlooding.
 	self buildChangesFrom: inducedPropagation matchCandidates withKnownMatches: matches

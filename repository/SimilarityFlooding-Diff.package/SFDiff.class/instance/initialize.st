@@ -1,4 +1,6 @@
 initialization
 initialize
 	super initialize.
-	self changes: Set new
+	self
+		changes: Set new;
+		inducedPropagationGraphFormulaSelector: #useFormulaC

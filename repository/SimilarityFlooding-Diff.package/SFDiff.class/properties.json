@@ -10,7 +10,8 @@
 		"baseModel",
 		"targetModel",
 		"changes",
-		"matchThreshold" ],
+		"matchThreshold",
+		"inducedPropagationGraphFormulaSelector" ],
 	"name" : "SFDiff",
 	"pools" : [
 		 ],

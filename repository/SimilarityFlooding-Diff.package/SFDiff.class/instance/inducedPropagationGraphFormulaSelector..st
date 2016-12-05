@@ -1,0 +1,3 @@
+accessing
+inducedPropagationGraphFormulaSelector: anObject
+	inducedPropagationGraphFormulaSelector := anObject
