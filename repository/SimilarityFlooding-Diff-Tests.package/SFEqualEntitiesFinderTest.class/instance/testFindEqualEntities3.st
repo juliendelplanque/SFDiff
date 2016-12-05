@@ -2,8 +2,8 @@ tests-finding
 testFindEqualEntities3
 	| results |
 	results := (finder
-						modelA: self model1A;
-						modelB: self model1C;
+						baseModel: self model1A;
+						targetModel: self model1C;
 						findEqualEntities;
 						matchedEntities) associations.
 
