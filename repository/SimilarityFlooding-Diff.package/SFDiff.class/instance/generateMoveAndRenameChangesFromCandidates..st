@@ -11,20 +11,8 @@ generateMoveAndRenameChangesFromCandidates: matchCandidates
 				match := sorted first.
 				sorted := sorted allButFirst reject: [ :each | each baseEntity = match baseEntity or: [ each targetEntity = match targetEntity ] ].
 				newMatches := newMatches union: (self retryEqualMatchFor: match baseEntity and: match targetEntity).
-				match baseEntity name = match targetEntity name
-					ifFalse: [ 
-						self changes
-							add: (FamixRenameChange new
-										baseEntity: match baseEntity; 
-										targetEntity: match targetEntity;
-										yourself) ].
-				(self areParentEntitiesEqualsFor: match baseEntity and: match targetEntity)
-					ifFalse: [ 
-						self changes
-							add: (FamixMoveChange new
-										baseEntity: match baseEntity;
-										targetEntity: match targetEntity;
-										yourself) ] ] ].
+				self generateMoveOrRenameChangeIfNeededFrom: match ] ].
+	"Generate version changes for new matches."
 	newMatches keysAndValuesDo: [ :key :value |
 		self changes removeAllSuchThat: [ :change | change baseEntity = key or: [ change targetEntity = value ] ].
 		self changes add: (FamixVersionChange new
