@@ -1,3 +1,3 @@
 computing
 falsePositives
-	^ self actualChanges \ (self expectedChanges intersection: self actualChanges)
+	^ self actualChanges \ self truePositives
