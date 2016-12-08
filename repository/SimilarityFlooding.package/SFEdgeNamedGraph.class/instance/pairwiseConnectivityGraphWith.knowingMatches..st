@@ -19,5 +19,5 @@ pairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: aDictiona
 						SFNamedEdge
 							from: (SFNode base: edge from target: otherEdge from)
 							to: (SFNode base: edge to target: otherEdge to)
-							named: edge name ])) do: [ :e | graph addEdge: e ] ] ].
+							named: edge name ])) do: [ :e | graph addEdge: e ] ] ]  displayingProgress: 'Building pairwise connectivity graph'.
 	^ graph
