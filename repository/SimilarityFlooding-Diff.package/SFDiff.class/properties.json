@@ -11,7 +11,12 @@
 		"targetModel",
 		"changes",
 		"matchThreshold",
-		"inducedPropagationGraphFormulaSelector" ],
+		"inducedPropagationGraphFormulaSelector",
+		"preprocessTime",
+		"pairwiseTime",
+		"changeBuildingTime",
+		"inducedPropagationTime",
+		"sfTime" ],
 	"name" : "SFDiff",
 	"pools" : [
 		 ],
