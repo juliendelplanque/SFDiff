@@ -16,6 +16,7 @@ sfDiffEvaluateFor: baseModel and: targetModel with: expectedChanges
 	actualChanges := diff changes select: [ :change | {FAMIXClass . FAMIXMethod . FAMIXAttribute} includes: change entity class ]. 
 	
 	^ self createDiffEvaluationResult
+			diff: diff; 
 			expectedChanges: expectedChanges;
 			actualChanges: (actualChanges reject: #isVersion);
 			timeToCompute: timeToRun;

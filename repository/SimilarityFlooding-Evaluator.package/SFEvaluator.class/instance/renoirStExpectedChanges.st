@@ -35,29 +35,29 @@ renoirStExpectedChanges
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'variable' and: [ e belongsTo name = 'CssSelector' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXClass and: [ e name = 'UrlRelativeToStyleSheet' and: [ e parentPackage name = 'RenoirSt-HTML' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'url' and: [ e belongsTo name = 'UrlRelativeToStyleSheet' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'on:' and: [ e belongsTo name = 'UrlRelativeToStyleSheet' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'on:' and: [ e belongsTo name = 'UrlRelativeToStyleSheet_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'cssContentOn:' and: [ e belongsTo name = 'UrlRelativeToStyleSheet' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'initializeOn:' and: [ e belongsTo name = 'UrlRelativeToStyleSheet' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'cssContentRelativeToStyleSheetOn:' and: [ e belongsTo name = 'ZnUrl' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'relativeToStyleSheet' and: [ e belongsTo name = 'ZnUrl' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'declareFontFaceRuleWith:' and: [ e belongsTo name = 'CascadingStyleSheetBuilder' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'toStringAttributeNamed:withFallback:' and: [ e belongsTo name = 'CssAttributeReference' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'toStringAttributeNamed:withFallback:' and: [ e belongsTo name = 'CssAttributeReference_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXClass and: [ e name = 'CssBoxShadow' and: [ e parentPackage name = 'RenoirSt' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'components' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:blurRadius:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:blurRadius:color:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:blurRadius:spreadDistance:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:blurRadius:spreadDistance:color:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:color:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'withAll:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:' and: [ e belongsTo name = 'CssBoxShadow_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:blurRadius:' and: [ e belongsTo name = 'CssBoxShadow_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:blurRadius:color:' and: [ e belongsTo name = 'CssBoxShadow_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:blurRadius:spreadDistance:' and: [ e belongsTo name = 'CssBoxShadow_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:blurRadius:spreadDistance:color:' and: [ e belongsTo name = 'CssBoxShadow_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'horizontalOffset:verticalOffset:color:' and: [ e belongsTo name = 'CssBoxShadow_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'withAll:' and: [ e belongsTo name = 'CssBoxShadow_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = ',' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'beInset' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'cssContentOn:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'initializeWithAll:' and: [ e belongsTo name = 'CssBoxShadow' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'ellipsis' and: [ e belongsTo name = 'CssConstants' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'notAllowed' and: [ e belongsTo name = 'CssConstants' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'vertical' and: [ e belongsTo name = 'CssConstants' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'ellipsis' and: [ e belongsTo name = 'CssConstants_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'notAllowed' and: [ e belongsTo name = 'CssConstants_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'vertical' and: [ e belongsTo name = 'CssConstants_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'opacity:' and: [ e belongsTo name = 'CssDeclarationBlock' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'overflowX:' and: [ e belongsTo name = 'CssDeclarationBlock' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'overflowY:' and: [ e belongsTo name = 'CssDeclarationBlock' ] ] ]); yourself.
@@ -67,36 +67,36 @@ renoirStExpectedChanges
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXClass and: [ e name = 'CssExternalFontReference' and: [ e parentPackage name = 'RenoirSt' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'url' and: [ e belongsTo name = 'CssExternalFontReference' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'format' and: [ e belongsTo name = 'CssExternalFontReference' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'locatedAt:' and: [ e belongsTo name = 'CssExternalFontReference' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'locatedAt:withFormat:' and: [ e belongsTo name = 'CssExternalFontReference' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'svgFontLocatedAt:withId:' and: [ e belongsTo name = 'CssExternalFontReference' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'locatedAt:' and: [ e belongsTo name = 'CssExternalFontReference_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'locatedAt:withFormat:' and: [ e belongsTo name = 'CssExternalFontReference_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'svgFontLocatedAt:withId:' and: [ e belongsTo name = 'CssExternalFontReference_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'cssContentOn:' and: [ e belongsTo name = 'CssExternalFontReference' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'initializeLocatedAt:withFormat:' and: [ e belongsTo name = 'CssExternalFontReference' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'embeddedOpentype' and: [ e belongsTo name = 'CssFontConstants' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'opentype' and: [ e belongsTo name = 'CssFontConstants' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'svg' and: [ e belongsTo name = 'CssFontConstants' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'truetype' and: [ e belongsTo name = 'CssFontConstants' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'woff' and: [ e belongsTo name = 'CssFontConstants' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'embeddedOpentype' and: [ e belongsTo name = 'CssFontConstants_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'opentype' and: [ e belongsTo name = 'CssFontConstants_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'svg' and: [ e belongsTo name = 'CssFontConstants_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'truetype' and: [ e belongsTo name = 'CssFontConstants_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'woff' and: [ e belongsTo name = 'CssFontConstants_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXClass and: [ e name = 'CssFontReference' and: [ e parentPackage name = 'RenoirSt' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = ',' and: [ e belongsTo name = 'CssFontReference' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'newWithAlpha:' and: [ e belongsTo name = 'CssHSLColor' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'newWithAlpha:' and: [ e belongsTo name = 'CssIdentifiedColor' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXClass and: [ e name = 'CssLocalFontReference' and: [ e parentPackage name = 'RenoirSt' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'fontName' and: [ e belongsTo name = 'CssLocalFontReference' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'toFontNamed:' and: [ e belongsTo name = 'CssLocalFontReference' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'toFontNamed:' and: [ e belongsTo name = 'CssLocalFontReference_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'cssContentOn:' and: [ e belongsTo name = 'CssLocalFontReference' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'initializeToFontNamed:' and: [ e belongsTo name = 'CssLocalFontReference' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXClass and: [ e name = 'CssObjectList' and: [ e parentPackage name = 'RenoirSt' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'components' and: [ e belongsTo name = 'CssObjectList' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'with:with:' and: [ e belongsTo name = 'CssObjectList' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'withAll:' and: [ e belongsTo name = 'CssObjectList' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'with:with:' and: [ e belongsTo name = 'CssObjectList_class' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'withAll:' and: [ e belongsTo name = 'CssObjectList_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'cssContentOn:' and: [ e belongsTo name = 'CssObjectList' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'initializeWithAll:' and: [ e belongsTo name = 'CssObjectList' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'newWithAlpha:' and: [ e belongsTo name = 'CssRGBColor' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXClass and: [ e name = 'CssSVGFontLocation' and: [ e parentPackage name = 'RenoirSt' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'url' and: [ e belongsTo name = 'CssSVGFontLocation' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'id' and: [ e belongsTo name = 'CssSVGFontLocation' ] ] ]); yourself.
-		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'at:withId:' and: [ e belongsTo name = 'CssSVGFontLocation' ] ] ]); yourself.
+		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'at:withId:' and: [ e belongsTo name = 'CssSVGFontLocation_class' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'cssContentOn:' and: [ e belongsTo name = 'CssSVGFontLocation' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'initializeAt:withId:' and: [ e belongsTo name = 'CssSVGFontLocation' ] ] ]); yourself.
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'not:' and: [ e belongsTo name = 'CssSelector' ] ] ]); yourself.
