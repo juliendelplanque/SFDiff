@@ -1,22 +1,6 @@
 evaluation
 libnotifyBindingExpectedChanges
 	^ { 
-		FamixMoveChange new
-			baseEntity: (self libnotifyBindingCommit1Model detect: [ :e | e class = FAMIXClass and: [ e name = 'LBFFIError' and: [ e parentPackage name = 'LibnotifyBinding' ] ] ]);
-			targetEntity: (self libnotifyBindingCommit2Model detect: [ :e | e class = FAMIXClass and: [ e name = 'LBFFIError' and: [ e parentPackage name = 'LibnotifyBinding' ] ] ]);
-			yourself.
-		FamixMoveChange new
-			baseEntity: (self libnotifyBindingCommit1Model detect: [ :e | e class = FAMIXClass and: [ e name = 'LBLibnotify' and: [ e parentPackage name = 'LibnotifyBinding' ] ] ]);
-			targetEntity: (self libnotifyBindingCommit2Model detect: [ :e | e class = FAMIXClass and: [ e name = 'LBLibnotify' and: [ e parentPackage name = 'LibnotifyBinding' ] ] ]);
-			yourself.
-		FamixMoveChange new
-			baseEntity: (self libnotifyBindingCommit1Model detect: [ :e | e class = FAMIXClass and: [ e name = 'LBNotification' and: [ e parentPackage name = 'LibnotifyBinding' ] ] ]);
-			targetEntity: (self libnotifyBindingCommit2Model detect: [ :e | e class = FAMIXClass and: [ e name = 'LBNotification' and: [ e parentPackage name = 'LibnotifyBinding' ] ] ]);
-			yourself.
-		FamixMoveChange new
-			baseEntity: (self libnotifyBindingCommit1Model detect: [ :e | e class = FAMIXClass and: [ e name = 'LBStringValueHolder' and: [ e parentPackage name = 'LibnotifyBinding' ] ] ]);
-			targetEntity: (self libnotifyBindingCommit2Model detect: [ :e | e class = FAMIXClass and: [ e name = 'LBStringValueHolder' and: [ e parentPackage name = 'LibnotifyBinding' ] ] ]);
-			yourself.
 		FamixAddChange new entity: (self libnotifyBindingCommit2Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'notificationAdd:action:label:callBack:userData:freeFunction:' and: [ e belongsTo name = 'LBLibnotify' ] ] ]); yourself.
 		FamixAddChange new entity: (self libnotifyBindingCommit2Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'notificationClearActions:' and: [ e belongsTo name = 'LBLibnotify' ] ] ]); yourself.
 		FamixAddChange new entity: (self libnotifyBindingCommit2Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'notificationClearHints:' and: [ e belongsTo name = 'LBLibnotify' ] ] ]); yourself.
