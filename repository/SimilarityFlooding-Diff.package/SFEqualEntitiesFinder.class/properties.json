@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "SFTHelper classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "JulienDelplanque 10/26/2016 09:16",
+	"commentStamp" : "JulienDelplanque 12/11/2016 12:55",
 	"instvars" : [
 		"matchedEntities",
 		"baseModel",
