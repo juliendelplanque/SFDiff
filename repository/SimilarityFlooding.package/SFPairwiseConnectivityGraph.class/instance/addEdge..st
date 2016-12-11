@@ -1,4 +1,4 @@
-as yet unclassified
+adding
 addEdge: aSFEdge
 	super addEdge: aSFEdge.
 	(incomingEdges includesKey: aSFEdge to)
