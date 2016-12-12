@@ -1,0 +1,3 @@
+evaluation
+evaluateOnMatrixtoolkit
+	^ self famixDiffEvaluateFor: self matrixtoolkitCommit1Model and: self matrixtoolkitCommit2Model with: self matrixtoolkitExpectedChanges
