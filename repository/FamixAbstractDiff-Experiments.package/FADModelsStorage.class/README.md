@@ -1,1 +1,0 @@
-I store models built by hand for testing purpose.

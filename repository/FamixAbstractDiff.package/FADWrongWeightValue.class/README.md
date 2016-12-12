@@ -1,1 +1,0 @@
-I am the error raised when a wrong value is set to the weight of a FADCriterion.

@@ -1,1 +1,0 @@
-SystemOrganization addCategory: #'FamixAbstractDiff-Tests'!

@@ -1,1 +1,0 @@
-I am the error raised when an object that can not act as an evaluator for a FADCriterion is set as evaluator.

@@ -1,1 +1,0 @@
-An abstract error for this framework.
