@@ -1,4 +1,4 @@
 *SimilarityFlooding-Diff
 sfIsEqualTo: anotherFAMIXNamedEntity
-	^ self famixClass = anotherFAMIXNamedEntity famixClass
+	^ self class = anotherFAMIXNamedEntity class
 		and: [ self name = anotherFAMIXNamedEntity name ]
