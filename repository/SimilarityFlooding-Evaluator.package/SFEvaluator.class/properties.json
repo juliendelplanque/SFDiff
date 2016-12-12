@@ -18,7 +18,9 @@
 		"texasHoldemPokerAICommit1Model",
 		"texasHoldemPokerAICommit2Model",
 		"matrixtoolkitCommit1Model",
-		"matrixtoolkitCommit2Model" ],
+		"matrixtoolkitCommit2Model",
+		"verveineCommit1Model",
+		"verveineCommit2Model" ],
 	"name" : "SFEvaluator",
 	"pools" : [
 		 ],
