@@ -1,4 +1,4 @@
-evaluation
+expected changes
 texasHoldemPokerAIExpectedChanges
 	^ {	FamixRemovalChange new
 			entity: (self texasHoldemPokerAICommit1Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'numberOfOccurrences' and: [ e belongsTo name = 'ContextAggregate' ] ] ]);

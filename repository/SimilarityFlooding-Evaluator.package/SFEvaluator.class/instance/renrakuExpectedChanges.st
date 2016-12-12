@@ -1,4 +1,4 @@
-evaluation
+expected changes
 renrakuExpectedChanges
 	^ { 
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'guidedBan:' and: [ e belongsTo name = 'CompiledMethod' ] ] ]); yourself.

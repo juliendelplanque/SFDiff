@@ -1,4 +1,4 @@
-evaluation
+expected changes
 smaCCExpectedChanges
 	^ { 
 		FamixAddChange new

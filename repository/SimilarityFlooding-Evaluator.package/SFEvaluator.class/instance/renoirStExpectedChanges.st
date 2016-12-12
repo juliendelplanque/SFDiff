@@ -1,4 +1,4 @@
-evaluation
+expected changes
 renoirStExpectedChanges
 	^ { 
 		FamixAddChange new entity: (self renoirStV200Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'abbreviation' and: [ e belongsTo name = 'CssSelector' ] ] ]); yourself.

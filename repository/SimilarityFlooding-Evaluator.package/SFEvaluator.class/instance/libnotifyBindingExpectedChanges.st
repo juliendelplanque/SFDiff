@@ -1,4 +1,4 @@
-evaluation
+expected changes
 libnotifyBindingExpectedChanges
 	^ { 
 		FamixAddChange new entity: (self libnotifyBindingCommit2Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'notificationAdd:action:label:callBack:userData:freeFunction:' and: [ e belongsTo name = 'LBLibnotify' ] ] ]); yourself.
