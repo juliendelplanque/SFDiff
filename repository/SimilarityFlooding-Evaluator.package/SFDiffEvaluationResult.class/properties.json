@@ -10,7 +10,8 @@
 		"expectedChanges",
 		"actualChanges",
 		"timeToCompute",
-		"diffName" ],
+		"diffName",
+		"projectName" ],
 	"name" : "SFDiffEvaluationResult",
 	"pools" : [
 		 ],

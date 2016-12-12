@@ -17,6 +17,6 @@ famixDiffEvaluateFor: baseModel and: targetModel with: expectedChanges
 	^ self createDiffEvaluationResult
 			diff: diff;
 			expectedChanges: expectedChanges;
-			actualChanges: (actualChanges reject: #isVersion);
+			actualChanges: (actualChanges reject: [ :each | each isVersion or: [ each entity isStub ] ]);
 			timeToCompute: timeToRun;
 			yourself
