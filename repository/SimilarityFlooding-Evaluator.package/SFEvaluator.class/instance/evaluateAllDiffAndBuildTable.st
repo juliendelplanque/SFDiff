@@ -13,4 +13,5 @@ evaluateAllDiffAndBuildTable
 				result notDetected size.
 				result falsePositives size.
 				result precision asFloat.
-				result recall asFloat} ]
+				result recall asFloat} ].
+	^ table

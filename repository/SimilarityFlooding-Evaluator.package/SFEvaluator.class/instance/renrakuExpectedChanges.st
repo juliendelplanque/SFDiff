@@ -9,8 +9,6 @@ renrakuExpectedChanges
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'critics' and: [ e belongsTo name = 'RBMethodNode' ] ] ]); yourself.
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'guidedBan:' and: [ e belongsTo name = 'RBMethodNode' ] ] ]); yourself.
 		
-		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'guidedBan' and: [ e belongsTo name = 'ReAbstractCritic' ] ] ]); yourself.
-		
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXClass and: [ e name = 'ReBasicMethodRule' ] ]); yourself.
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXClass and: [ e name = 'ReBasicMethodRule_class' ] ]); yourself.
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'checksMethod' and: [ e belongsTo name = 'ReBasicMethodRule_class' ] ] ]); yourself.
@@ -61,5 +59,14 @@ renrakuExpectedChanges
 		
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXAttribute and: [ e name = 'astRules' and: [ e belongsTo name = 'ReRuleManager' ] ] ]); yourself.
 		
-		FamixRemovalChange new entity: (self renrakuV0100Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'guidedSkip' and: [ e belongsTo name = 'ReAbstractCritic' ] ] ]); yourself.
+		"FamixRemovalChange new entity: (self renrakuV0100Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'guidedSkip' and: [ e belongsTo name = 'ReAbstractCritic' ] ] ]); yourself.
+		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'guidedBan' and: [ e belongsTo name = 'ReAbstractCritic' ] ] ]); yourself."
+		FamixRenameChange new
+			baseEntity: (self renrakuV0100Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'guidedSkip' and: [ e belongsTo name = 'ReAbstractCritic' ] ] ]);
+			targetEntity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'guidedBan' and: [ e belongsTo name = 'ReAbstractCritic' ] ] ]);
+			yourself.
+		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'checksAST' and: [ e belongsTo name = 'RBLintRule_class' ] ] ]); yourself.
+
+		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'leftmostChainReceiver' and: [ e belongsTo name = 'RBCascadeNode' ] ] ]); yourself.
+		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'leftmostChainReceiver' and: [ e belongsTo name = 'RBMessageNode' ] ] ]); yourself.
 	 }
