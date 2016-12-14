@@ -2,7 +2,7 @@ helpers
 areParentEntitiesEqualsFor: anEntity and: anotherEntity
 	| anEntityParents anotherEntityParents |
 	anEntityParents := self parentEntitiesOf: anEntity.
-	anotherEntityParents := self parentEntitiesOf: anEntity.
+	anotherEntityParents := self parentEntitiesOf: anotherEntity.
 	^ anEntityParents
 		allSatisfy: [ :entityParent | 
 			anotherEntityParents
