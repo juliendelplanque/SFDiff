@@ -1,7 +1,7 @@
 evaluation
 evaluateDiffs: selectors
 	| results |
-	results := OrderedCollection new.
+	results := SFDiffEvaluationResultSet new.
 	self class subclasses
 		do: [ :evaluatorClass | 
 			| evaluator |

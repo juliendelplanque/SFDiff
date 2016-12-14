@@ -1,0 +1,14 @@
+{
+	"category" : "SimilarityFlooding-Evaluator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 12/14/2016 10:15",
+	"instvars" : [
+		"results" ],
+	"name" : "SFDiffEvaluationResultSet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
