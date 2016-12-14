@@ -1,7 +1,7 @@
 diffing
 generateRemovalChanges
-	(self baseModel allWithSubTypesOf: FAMIXNamedEntity)
+	(self baseModel allWithSubTypesOf: FAMIXNamedEntity) entities
 		select: [ :e | 
 			e isStub not and: [ 
-				self changes noneSatisfy: [ :change | change baseEntity = e ] ] ]
+				self changes noneSatisfy: [ :change | change entity = e ] ] ]
 		thenDo: [ :e | self changes add: (FamixRemovalChange new entity: e; yourself) ]
