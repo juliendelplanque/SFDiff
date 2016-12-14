@@ -67,6 +67,5 @@ renrakuExpectedChanges
 			yourself.
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'checksAST' and: [ e belongsTo name = 'RBLintRule_class' ] ] ]); yourself.
 
-		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'leftmostChainReceiver' and: [ e belongsTo name = 'RBCascadeNode' ] ] ]); yourself.
 		FamixAddChange new entity: (self renrakuV0110Model detect: [ :e | e class = FAMIXMethod and: [ e name = 'leftmostChainReceiver' and: [ e belongsTo name = 'RBMessageNode' ] ] ]); yourself.
 	 }
