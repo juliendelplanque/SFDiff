@@ -5,11 +5,12 @@ generateMoveAndRenameChangesFromCandidates: matchCandidates
 	newMatches := Dictionary new.
 	groupedByType valuesDo: [ :m |
 		|sorted|
-		sorted := m sorted: [ :a :b | a > b ].
+		sorted := m sorted: [ :a :b | a sigmaValue >= b sigmaValue ].
 		[ sorted isNotEmpty and: [ sorted first sigmaValue >= self matchThreshold ] ]
 			whileTrue: [ |match|
 				match := sorted first.
-				sorted := sorted allButFirst reject: [ :each | each baseEntity = match baseEntity or: [ each targetEntity = match targetEntity ] ].
+				sorted := sorted allButFirst reject: [ :each |
+					each baseEntity = match baseEntity or: [ each targetEntity = match targetEntity ] ].
 				newMatches := newMatches union: (self retryEqualMatchFor: match baseEntity and: match targetEntity).
 				self generateMoveOrRenameChangeIfNeededFrom: match ] ].
 	"Generate version changes for new matches."
