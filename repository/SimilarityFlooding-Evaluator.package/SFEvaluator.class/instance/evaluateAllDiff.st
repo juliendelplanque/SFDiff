@@ -1,3 +1,3 @@
 evaluation
 evaluateAllDiff
-	^ self evaluateDiffs: #(evaluateOnLibnotifyBinding evaluateOnRenoirSt evaluateOnRenraku evaluateOnSmaCC evaluateOnTexasHoldemPokerAI)
+	^ self evaluateDiffs: #(evaluateOnLibnotifyBinding evaluateOnRenoirSt evaluateOnRenraku evaluateOnSmaCC evaluateOnTexasHoldemPokerAI evaluateOnMatrixtoolkit evaluateOnVerveine)
