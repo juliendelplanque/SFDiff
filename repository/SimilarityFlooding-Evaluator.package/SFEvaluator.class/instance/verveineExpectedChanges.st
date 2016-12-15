@@ -41,9 +41,6 @@ verveineExpectedChanges
 		entity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'mkStubKey' and: [ e belongsTo name = 'NameResolver' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('IASTName' 'ContainerEntity' 'Class<T>')) and: [ e parameters size = 3 ] ] ] ]]);
 		yourself.
 	FamixAddChange new
-		entity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'mkStubKey' and: [ e belongsTo name = 'NameResolver' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('IASTName' 'Class<T>')) and: [ e parameters size = 2 ] ] ] ]]);
-		yourself.
-	FamixAddChange new
 		entity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'mkStubKey' and: [ e belongsTo name = 'NameResolver' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('String' 'Class<T>')) and: [ e parameters size = 2 ] ] ] ]]);
 		yourself.
 	FamixAddChange new
@@ -55,9 +52,9 @@ verveineExpectedChanges
 	FamixAddChange new
 		entity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'setContext' and: [ e belongsTo name = 'NameResolver' ] ]]);
 		yourself.
-	FamixAddChange new
+	"FamixAddChange new
 		entity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'unqualifiedName' and: [ e belongsTo name = 'NameResolver' ] ]]);
-		yourself.
+		yourself."
 	FamixAddChange new
 		entity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'PackageDefVisitor' and: [ e belongsTo name = 'PackageDefVisitor' ] ]]);
 		yourself.
@@ -98,9 +95,9 @@ verveineExpectedChanges
 	FamixRemovalChange new
 		entity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'recursiveEnsureParentNamespace' and: [ e belongsTo name = 'AbstractVisitor' ] ]]);
 		yourself.
-	FamixRemovalChange new
+	"FamixRemovalChange new
 		entity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'unqualifiedName' and: [ e belongsTo name = 'AbstractVisitor' ] ]]);
-		yourself.
+		yourself."
 	FamixRemovalChange new
 		entity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'PackageDefVisistor' and: [ e belongsTo name = 'PackageDefVisistor' ] ]]);
 		yourself.
@@ -118,8 +115,8 @@ verveineExpectedChanges
 		targetEntity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'NameResolver' and: [ e name = 'ensureBehavioural' ]]]);
 		yourself.
 	FamixMoveChange new
-		baseEntity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'AbstractVisitor' and: [ e name = 'unqualifiedName' ]]]);
-		targetEntity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'NameResolver' and: [ e name = 'unqualifiedName' ]]]);
+		baseEntity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'AbstractVisitor' and: [ e name = 'unqualifiedName' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('IASTName')) and: [ e parameters size = 1 ] ] ]]]);
+		targetEntity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'NameResolver' and: [ e name = 'unqualifiedName' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('IASTName')) and: [ e parameters size = 1 ] ] ]]]);
 		yourself.
 	FamixMoveChange new
 		baseEntity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'AbstractVisitor' and: [ e name = 'resolveOrNamespace' ]]]);
@@ -190,8 +187,12 @@ verveineExpectedChanges
 		targetEntity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'NameResolver' and: [ e name = 'isDestructor' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('BehaviouralEntity')) and: [ e parameters size = 1 ]] ]]]);
 		yourself.
 	FamixMoveChange new
-		baseEntity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'AbstractVisitor' and: [ e name = 'unqualifiedName' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('IASTName')) and: [ e parameters size = 1 ] ] ]]]);
-		targetEntity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'NameResolver' and: [ e name = 'unqualifiedName' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('IASTName')) and: [ e parameters size = 1 ]] ]]]);
+		baseEntity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'AbstractVisitor' and: [ e name = 'unqualifiedName' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('String')) and: [ e parameters size = 1 ] ] ]]]);
+		targetEntity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e belongsTo name = 'NameResolver' and: [ e name = 'unqualifiedName' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('String')) and: [ e parameters size = 1 ]] ]]]);
+		yourself.
+	FamixMoveChange new
+		baseEntity: (self verveineCommit1Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'mkStubKey' and: [ e belongsTo name = 'AbstractVisitor' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('IASTName' 'Class<T>')) and: [ e parameters size = 2 ] ] ] ]]);
+		targetEntity: (self verveineCommit2Model entities detect: [ :e | e class = FAMIXMethod and: [ e name = 'mkStubKey' and: [ e belongsTo name = 'NameResolver' and: [ ((e parameters collect: [ :p | p declaredType name ]) includesAll: #('IASTName' 'Class<T>')) and: [ e parameters size = 2 ] ] ] ]]);
 		yourself.
 	"Rename changes"
 	FamixRenameChange new
