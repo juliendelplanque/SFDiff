@@ -1,4 +1,4 @@
-diffing
+change generation
 generateMoveOrRenameChangeIfNeededFrom: match
 	self flag: #todo. "This should be reworked..."
 	self

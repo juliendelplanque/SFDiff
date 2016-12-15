@@ -1,4 +1,4 @@
-diffing
+change generation
 generateRemovalChanges
 	(self baseModel allWithSubTypesOf: FAMIXNamedEntity) entities
 		select: [ :e | 

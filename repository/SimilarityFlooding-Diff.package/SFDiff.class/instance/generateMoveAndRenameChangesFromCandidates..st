@@ -1,4 +1,4 @@
-diffing
+change generation
 generateMoveAndRenameChangesFromCandidates: matchCandidates
 	| groupedByType newMatches|
 	groupedByType := matchCandidates groupedBy: [ :match | match baseEntity class ].

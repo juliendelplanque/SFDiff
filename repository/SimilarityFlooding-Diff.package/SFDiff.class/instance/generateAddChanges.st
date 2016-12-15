@@ -1,4 +1,4 @@
-diffing
+change generation
 generateAddChanges
 	|changesWithoutRemovals|
 	changesWithoutRemovals := self changes reject: #isRemoval.

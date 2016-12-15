@@ -1,4 +1,4 @@
-diffing
+change generation
 generateVersionChangesFrom: matches
 	matches keysAndValuesDo: [ :key :value |
 		self changes
