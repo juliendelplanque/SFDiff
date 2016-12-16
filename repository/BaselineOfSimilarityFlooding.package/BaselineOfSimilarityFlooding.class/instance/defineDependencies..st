@@ -4,7 +4,13 @@ defineDependencies: spec
 		project: 'ChangeModel' with: [
 			spec
 				className: 'ConfigurationOfFamixDiff';
-				version: #stable;
+				version: #development;
 				repository: 'http://smalltalkhub.com/mc/Moose/FamixDiff/main';
 				loads: 'ChangeModel' ];
+		project: 'FamixDiff' with: [
+			spec
+				className: 'ConfigurationOfFamixDiff';
+				version: #development;
+				repository: 'http://smalltalkhub.com/mc/Moose/FamixDiff/main';
+				loads: 'Core' ];
 		yourself
