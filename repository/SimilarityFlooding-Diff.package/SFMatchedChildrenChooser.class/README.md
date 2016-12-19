@@ -1,0 +1,1 @@
+To select candidates, I use the values given by SF as well as the proportion of children matched to find the best matches.

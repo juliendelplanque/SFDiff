@@ -1,0 +1,16 @@
+{
+	"category" : "SimilarityFlooding-Diff",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "SFTHelper classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 12/16/2016 14:02",
+	"instvars" : [
+		 ],
+	"name" : "SFBestSigmaChooser",
+	"pools" : [
+		 ],
+	"super" : "SFCandidateChooser",
+	"traitcomposition" : "SFTHelper",
+	"type" : "normal" }

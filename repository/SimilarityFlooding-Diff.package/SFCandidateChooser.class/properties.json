@@ -1,0 +1,14 @@
+{
+	"category" : "SimilarityFlooding-Diff",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 12/16/2016 11:59",
+	"instvars" : [
+		"sfDiff" ],
+	"name" : "SFCandidateChooser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

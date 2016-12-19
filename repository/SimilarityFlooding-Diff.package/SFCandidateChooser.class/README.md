@@ -1,0 +1,1 @@
+I am an object that choose the candidates from the output of SF algorithm.
