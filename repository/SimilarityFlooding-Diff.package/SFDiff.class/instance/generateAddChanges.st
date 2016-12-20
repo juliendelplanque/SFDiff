@@ -1,6 +1,5 @@
 change generation
 generateAddChanges
-	self changes inspect.
 	(self targetModel allWithSubTypesOf: FAMIXNamedEntity)
 		select: [ :e |
 			e isStub not and: [ 
