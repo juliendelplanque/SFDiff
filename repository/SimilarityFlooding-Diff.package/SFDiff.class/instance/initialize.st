@@ -4,4 +4,4 @@ initialize
 	self
 		changes: OrderedCollection new;
 		inducedPropagationGraphFormulaSelector: #useFormulaC;
-		candidateChooserClass: SFBestSigmaChooser
+		candidateChooserClass: SFMatchedChildrenChooser
