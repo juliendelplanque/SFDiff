@@ -21,7 +21,7 @@ selectCandidates: matchCandidates
 													yourself) ].
 					(self canGenerateRenameFrom: match)
 						ifTrue: [ 
-							newMatches add: (FamixMoveChange new
+							newMatches add: (FamixRenameChange new
 													baseEntity: match baseEntity;
 													targetEntity: match targetEntity;
 													yourself) ] ] ].
