@@ -1,9 +1,8 @@
 change generation
 generateAddChanges
-	|changesWithoutRemovals|
-	changesWithoutRemovals := self changes reject: #isRemoval.
+	self changes inspect.
 	(self targetModel allWithSubTypesOf: FAMIXNamedEntity)
 		select: [ :e |
 			e isStub not and: [ 
-				changesWithoutRemovals noneSatisfy: [ :change | change targetEntity = e ] ] ]
+				self changes noneSatisfy: [ :change | change isMatch and: [ change targetEntity = e ] ] ] ]
 		thenDo: [ :e | self changes add: (FamixAddChange new entity: e; yourself) ]

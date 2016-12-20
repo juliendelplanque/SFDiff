@@ -2,5 +2,6 @@ initialization
 initialize
 	super initialize.
 	self
-		changes: Set new;
-		inducedPropagationGraphFormulaSelector: #useFormulaC
+		changes: OrderedCollection new;
+		inducedPropagationGraphFormulaSelector: #useFormulaC;
+		candidateChooserClass: SFBestSigmaChooser

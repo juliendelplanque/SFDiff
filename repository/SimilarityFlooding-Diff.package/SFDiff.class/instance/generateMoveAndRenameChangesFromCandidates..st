@@ -1,7 +1,7 @@
 change generation
 generateMoveAndRenameChangesFromCandidates: matchCandidates
 	| candidateChooser newMatches |
-	candidateChooser := SFBestSigmaChooser new
+	candidateChooser := self candidateChooserClass new
 								sfDiff: self;
 								yourself.
 	newMatches := candidateChooser selectCandidates: matchCandidates.
