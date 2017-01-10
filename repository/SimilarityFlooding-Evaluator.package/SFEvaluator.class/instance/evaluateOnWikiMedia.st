@@ -1,0 +1,3 @@
+evaluation
+evaluateOnWikiMedia
+	^ self subclassResponsibility

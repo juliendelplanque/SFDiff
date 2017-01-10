@@ -20,7 +20,9 @@
 		"matrixtoolkitCommit1Model",
 		"matrixtoolkitCommit2Model",
 		"verveineCommit1Model",
-		"verveineCommit2Model" ],
+		"verveineCommit2Model",
+		"wikimedia170Model",
+		"wikimedia180Model" ],
 	"name" : "SFEvaluator",
 	"pools" : [
 		 ],
