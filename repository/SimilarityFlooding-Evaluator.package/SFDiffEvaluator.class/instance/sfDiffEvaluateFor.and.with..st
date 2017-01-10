@@ -8,7 +8,8 @@ sfDiffEvaluateFor: baseModel and: targetModel with: expectedChanges
 		diff := SFDiff new
 					baseModel: baseModel;
 					targetModel: targetModel;
-					matchThreshold: 0.001;
+					matchThreshold: 0.01;
+					candidateChooserClass: SFBestSigmaChooser;
 					computeDiff;
 					yourself
 	] timeToRun.
