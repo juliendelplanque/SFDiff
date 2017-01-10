@@ -1,6 +1,6 @@
 helpers
 parentEntitiesOf: anEntity
-	^ anEntity class parentSelector
+	^ anEntity class parentSelectors
 			inject: OrderedCollection new
 			into: [ :union :selector |
 				(selector value: anEntity)
