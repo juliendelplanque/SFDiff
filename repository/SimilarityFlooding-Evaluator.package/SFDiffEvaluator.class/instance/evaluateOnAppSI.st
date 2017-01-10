@@ -1,0 +1,4 @@
+evaluation
+evaluateOnAppSI
+	self flag: #todo.
+	^ self sfDiffEvaluateOnSQLFor: self appsi20151012Model and: self appsi20151119Model with: #()

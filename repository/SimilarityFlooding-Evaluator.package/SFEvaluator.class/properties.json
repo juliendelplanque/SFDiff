@@ -22,7 +22,9 @@
 		"verveineCommit1Model",
 		"verveineCommit2Model",
 		"wikimedia170Model",
-		"wikimedia180Model" ],
+		"wikimedia180Model",
+		"appsi20151012Model",
+		"appsi20151119Model" ],
 	"name" : "SFEvaluator",
 	"pools" : [
 		 ],
