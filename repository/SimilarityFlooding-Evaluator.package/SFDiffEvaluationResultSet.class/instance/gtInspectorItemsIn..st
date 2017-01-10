@@ -5,17 +5,7 @@ gtInspectorItemsIn: composite
 		title: 'Results';
 		display: [ :aCollection | (1 to: self results size) collect: [ :index | 
 			|result|
-			result := self results at: index.
-			"{	result diffName.
-				result projectName.
-				result timeToCompute.
-				result actualChanges size.
-				result expectedChanges size.
-				result notDetected size.
-				result falsePositives size.
-				result precision asFloat.
-				result recall asFloat
-			}"] ];
+			result := self results at: index ] ];
 		beMultiple;
 		searchOn: [:text :each | 
 			Smalltalk compiler evaluate: ' | entity each | each := self. entity := each.', text for: each value logged: false];
