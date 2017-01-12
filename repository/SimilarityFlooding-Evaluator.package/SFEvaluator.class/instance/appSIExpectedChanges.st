@@ -44,18 +44,6 @@ appSIExpectedChanges
 		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'tprenom' and: [ e belongsTo name = 'vue_liste_doctorants' ] ] ]);
 		yourself.
 	FamixRemovalChange new
-		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXView and: [ e name = 'vue_support_le_plus_ancien' ] ]);
-		yourself.
-	FamixRemovalChange new
-		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'cle_personne' and: [ e belongsTo name = 'vue_support_le_plus_ancien' ] ] ]);
-		yourself.
-	FamixRemovalChange new
-		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'min' and: [ e belongsTo name = 'vue_support_le_plus_ancien' ] ] ]);
-		yourself.
-	FamixRemovalChange new
-		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'clesupport' and: [ e belongsTo name = 'vue_support_le_plus_ancien' ] ] ]);
-		yourself.
-	FamixRemovalChange new
 		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXView and: [ e name = 'vue_liste_personnel_affectations' ] ]);
 		yourself.
 	FamixRemovalChange new
@@ -131,7 +119,7 @@ appSIExpectedChanges
 		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'reffinancement' and: [ e belongsTo name = 'vue_liste_personnel_affectations' ] ] ]);
 		yourself.
 	FamixRemovalChange new
-		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'responsablethese' and: [ e belongsTo name = 'vue_liste_personnel_affectations' ] ] ]);
+		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'responsablethese' and: [ e belongsTo name = 'vue_liste_personnel_affectations' and: [ e dependentColumns first name = 'nom' ] ] ] ]);
 		yourself.
 	"--"
 	FamixAddChange new
@@ -210,7 +198,7 @@ appSIExpectedChanges
 		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'reffinancement' and: [ e belongsTo name = 'vue_liste_personnel_affectations' ] ] ]);
 		yourself.
 	FamixAddChange new
-		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'responsablethese' and: [ e belongsTo name = 'vue_liste_personnel_affectations' ] ] ]);
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'responsablethese' and: [ e belongsTo name = 'vue_liste_personnel_affectations' and: [ e userFunctions first name = 'membres' ] ] ] ]);
 		yourself.
 	FamixAddChange new
 		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'tnom' and: [ e belongsTo name = 'vue_membres_associes' ] ] ]);
@@ -235,4 +223,55 @@ appSIExpectedChanges
 		yourself.
 	FamixAddChange new
 		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'clesupport' and: [ e belongsTo name = 'vue_support_le_plus_ancien' ] ] ]);
-		yourself. }
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'directeur' and: [ e belongsTo name = 'vue_theses_soutenues_par_annee' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'directeur' and: [ e belongsTo name = 'vue_theses_par_equipe' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'tprenom' and: [ e belongsTo name = 'vue_theses_soutenues_par_annee' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'tprenompersonne' and: [ e belongsTo name = 'vue_liste_personnel_affectations' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'tnompersonne' and: [ e belongsTo name = 'vue_liste_personnel_affectations' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'coencadrant' and: [ e belongsTo name = 'vue_liste_doctorants' ] ] ]);
+		yourself.
+	FamixRemovalChange new
+		entity: (self appsi20151012Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'responsablethese' and: [ e belongsTo name = 'vue_liste_personnel_affectations' and: [ e dependentColumns first name = 'prenom' ] ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'tnom' and: [ e belongsTo name = 'vue_theses_soutenues_par_annee' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'emplacement' and: [ e belongsTo name = 'vue_annuaire_localisations_par_membre' and: [ e dependentTables first name = 'batiment' ] ] ] ]);
+		yourself. 
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'responsable' and: [ e belongsTo name = 'vue_liste_doctorants' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'emplacement' and: [ e belongsTo name = 'vue_annuaire_localisations_par_membre' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'estresp' and: [ e belongsTo name = 'web_membres' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'estresp' and: [ e belongsTo name = 'web_membres_par_affectation_actuelle' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'emplacement' and: [ e belongsTo name = 'vue_annuaire_localisations_par_membre' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'nomprenom' and: [ e belongsTo name = 'cleNomPrenom_des_membres' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXColumn and: [ e name = 'nomprenom' and: [ e belongsTo name = 'vue_clenomprenom_des_membres' ] ] ]);
+		yourself.
+	FamixAddChange new
+		entity: (self appsi20151119Model detect: [ :e | e class = FAMIXTrigger and: [ e name = 'maj_date_creation' ] ]);
+		yourself.  }

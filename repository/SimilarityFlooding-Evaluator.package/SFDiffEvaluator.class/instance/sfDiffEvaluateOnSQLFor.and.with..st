@@ -17,6 +17,6 @@ sfDiffEvaluateOnSQLFor: baseModel and: targetModel with: expectedChanges
 	^ self createDiffEvaluationResult
 			diff: diff; 
 			expectedChanges: expectedChanges;
-			actualChanges: (diff changes reject: #isVersion);
+			actualChanges: (diff changes reject: [ :c | c isVersion or: [ c entity belongsTo class = FAMIXSQLFunction and: [ #('add_interwiki' 'to_char') includes: c entity belongsTo name ] ] ]);
 			timeToCompute: timeToRun;
 			yourself
