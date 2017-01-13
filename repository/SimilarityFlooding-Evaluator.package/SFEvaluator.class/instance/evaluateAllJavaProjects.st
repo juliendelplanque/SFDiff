@@ -1,0 +1,3 @@
+evaluation
+evaluateAllJavaProjects
+	^ self evaluateDiffs: #(evaluateOnTexasHoldemPokerAI evaluateOnMatrixtoolkit evaluateOnVerveine)
