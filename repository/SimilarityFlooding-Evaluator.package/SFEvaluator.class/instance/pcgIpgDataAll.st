@@ -1,3 +1,6 @@
 pcg ipg evaluation
 pcgIpgDataAll
-	^ { self pcgIpgHeader } , (#(appsiPCGIPG libnotifyBindingPCGIPG matrixtoolkitPCGIPG renoirStPCGIPG renrakuPCGIPG smaCCPCGIPG texasHoldemPokerAIPCGIPG verveinePCGIPG wikimediaPCGIPG) collect: [ :selector | selector value: self ])
+	| result |
+	result := { self pcgIpgHeader } asOrderedCollection.
+	#(appsiPCGIPG libnotifyBindingPCGIPG matrixtoolkitPCGIPG renoirStPCGIPG renrakuPCGIPG smaCCPCGIPG texasHoldemPokerAIPCGIPG verveinePCGIPG wikimediaPCGIPG) do: [ :selector | result add: (selector value: self) ] displayingProgress: 'PCG IPG evaluation.'.
+	^ result
