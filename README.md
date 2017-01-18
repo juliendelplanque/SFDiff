@@ -1,4 +1,7 @@
 # SFDiff
+This project is an implementation of the Similarity Flooding algorithm as defined by Sergey Melnik, Hector Garcia-Molina, and Erhard Rahm in 'Similarity flooding: A versatile graph matching algorithm and its application to schema matching' and in the technical report associated.
+
+The implementation has been realised in [Pharo](http://pharo.org/) 6, more specifically, inside the [Moose](http://www.moosetechnology.org) 6.1 environment.
 ## Install
 ```
 Metacello new
