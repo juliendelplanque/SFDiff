@@ -1,1 +1,0 @@
-I am a FAMIX visitor that build a SFEdgeNamedGraph from FAMIX entities.
