@@ -1,0 +1,14 @@
+{
+	"category" : "SimilarityFlooding-Diff-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienDelplanque 3/3/2017 12:32",
+	"instvars" : [
+		 ],
+	"name" : "SFModelStore",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,1 @@
+I am a class used to store the models for testing.
