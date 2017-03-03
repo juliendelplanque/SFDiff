@@ -8,4 +8,5 @@ buildChangesFrom: matchCandidates withKnownMatches: matches
 	self
 		generateMoveAndRenameChangesFromCandidates: filtered;
 		generateRemovalChanges;
-		generateAddChanges
+		generateAddChanges;
+		generateAssociationChanges
