@@ -4,5 +4,5 @@ baselineMaster: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec baseline: 'Mirage' with: [
+		spec baseline: 'SimilarityFlooding' with: [
 			spec repository: 'github://juliendelplanque/SFDiff/repository' ] ].
