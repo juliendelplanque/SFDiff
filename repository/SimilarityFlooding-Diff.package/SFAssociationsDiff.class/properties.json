@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JulienDelplanque 3/13/2017 21:29",
+	"super" : "Object",
+	"category" : "SimilarityFlooding-Diff",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"entitiesVersionChanges",
+		"baseAssociations",
+		"targetAssociations",
+		"changes"
+	],
+	"name" : "SFAssociationsDiff",
+	"type" : "normal"
+}

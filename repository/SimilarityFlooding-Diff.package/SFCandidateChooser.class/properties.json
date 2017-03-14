@@ -1,16 +1,15 @@
 {
-	"category" : "SimilarityFlooding-Diff",
-	"classinstvars" : [
-		 ],
 	"classtraitcomposition" : "SFTHelper classTrait",
-	"classvars" : [
-		 ],
-	"commentStamp" : "JulienDelplanque 12/16/2016 11:59",
+	"classvars" : [ ],
 	"instvars" : [
-		"sfDiff" ],
+		"sfDiff"
+	],
 	"name" : "SFCandidateChooser",
-	"pools" : [
-		 ],
+	"commentStamp" : "JulienDelplanque 12/16/2016 11:59",
 	"super" : "Object",
 	"traitcomposition" : "SFTHelper",
-	"type" : "normal" }
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SimilarityFlooding-Diff"
+}

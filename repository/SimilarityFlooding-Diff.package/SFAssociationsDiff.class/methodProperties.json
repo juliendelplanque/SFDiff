@@ -1,0 +1,19 @@
+{
+	"instance" : {
+		"computeDiff" : "JulienDelplanque 3/13/2017 21:55",
+		"versionAndRemovalChanges" : "JulienDelplanque 3/13/2017 21:54",
+		"targetAssociations:" : "JulienDelplanque 3/13/2017 21:29",
+		"changes" : "JulienDelplanque 3/13/2017 21:40",
+		"targetAssociations" : "JulienDelplanque 3/13/2017 21:29",
+		"changes:" : "JulienDelplanque 3/13/2017 21:40",
+		"entitiesVersionChanges" : "JulienDelplanque 3/13/2017 21:34",
+		"baseAssociations" : "JulienDelplanque 3/13/2017 21:29",
+		"initialize" : "JulienDelplanque 3/13/2017 21:40",
+		"baseAssociations:" : "JulienDelplanque 3/13/2017 21:29",
+		"versionAndAddChanges" : "JulienDelplanque 3/13/2017 21:54",
+		"entitiesVersionChanges:" : "JulienDelplanque 3/13/2017 21:34"
+	},
+	"class" : {
+		"baseAssociations:targetAssociations:entitiesVersionChanges:" : "JulienDelplanque 3/13/2017 21:48"
+	}
+}

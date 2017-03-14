@@ -1,14 +1,11 @@
 {
-	"category" : "SimilarityFlooding-Diff",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 12/16/2016 12:01",
-	"instvars" : [
-		 ],
-	"name" : "SFMatchedChildrenChooser",
-	"pools" : [
-		 ],
 	"super" : "SFCandidateChooser",
-	"type" : "normal" }
+	"category" : "SimilarityFlooding-Diff",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SFMatchedChildrenChooser",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "SimilarityFlooding-Diff",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 3/5/2017 10:24",
-	"instvars" : [
-		 ],
-	"name" : "SFSimpleBestSigmaChooser",
-	"pools" : [
-		 ],
 	"super" : "SFCandidateChooser",
-	"type" : "normal" }
+	"category" : "SimilarityFlooding-Diff",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SFSimpleBestSigmaChooser",
+	"type" : "normal"
+}

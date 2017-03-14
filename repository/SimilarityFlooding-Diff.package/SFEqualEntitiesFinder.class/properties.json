@@ -1,18 +1,17 @@
 {
-	"category" : "SimilarityFlooding-Diff",
-	"classinstvars" : [
-		 ],
 	"classtraitcomposition" : "SFTHelper classTrait",
-	"classvars" : [
-		 ],
-	"commentStamp" : "JulienDelplanque 12/11/2016 12:55",
+	"classvars" : [ ],
 	"instvars" : [
 		"matchedEntities",
 		"baseModel",
-		"targetModel" ],
+		"targetModel"
+	],
 	"name" : "SFEqualEntitiesFinder",
-	"pools" : [
-		 ],
+	"commentStamp" : "JulienDelplanque 12/11/2016 12:55",
 	"super" : "Object",
 	"traitcomposition" : "SFTHelper",
-	"type" : "normal" }
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SimilarityFlooding-Diff"
+}

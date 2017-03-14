@@ -1,10 +1,10 @@
 {
-	"category" : "SimilarityFlooding-Diff",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/26/2016 09:18",
+	"super" : "Object",
+	"category" : "SimilarityFlooding-Diff",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"baseModel",
 		"targetModel",
@@ -16,9 +16,8 @@
 		"pairwiseTime",
 		"changeBuildingTime",
 		"inducedPropagationTime",
-		"sfTime" ],
+		"sfTime"
+	],
 	"name" : "SFDiff",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}
