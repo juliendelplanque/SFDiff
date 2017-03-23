@@ -1,7 +1,9 @@
 diffing
 computeDiff
 	| baseGraph targetGraph matches pairwise inducedPropagation |
-	baseGraph := SFGenericGraphBuilder graphBuiltFromModel:self baseModel.
+	self baseModel prepareToDiff.
+	self targetModel prepareToDiff.
+	baseGraph := SFGenericGraphBuilder graphBuiltFromModel: self baseModel.
 	targetGraph := SFGenericGraphBuilder graphBuiltFromModel: self targetModel.
 	preprocessTime := [
 		matches := SFEqualEntitiesFinder new
