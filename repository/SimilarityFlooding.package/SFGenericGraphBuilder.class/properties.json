@@ -1,16 +1,15 @@
 {
-	"category" : "SimilarityFlooding-GraphBuilder",
-	"classinstvars" : [
-		 ],
 	"classtraitcomposition" : "SFTHelper classTrait",
-	"classvars" : [
-		 ],
-	"commentStamp" : "JulienDelplanque 12/2/2016 15:36",
+	"classvars" : [ ],
 	"instvars" : [
-		"buildStack" ],
+		"buildStack"
+	],
 	"name" : "SFGenericGraphBuilder",
-	"pools" : [
-		 ],
+	"commentStamp" : "JulienDelplanque 12/2/2016 15:36",
 	"super" : "SFAbstractGraphBuilder",
 	"traitcomposition" : "SFTHelper",
-	"type" : "normal" }
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SimilarityFlooding-GraphBuilder"
+}

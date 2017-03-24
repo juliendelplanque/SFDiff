@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"addEdge:" : " 3/10/2017 10:32:04",
+		"outgoingEdgesLabelled:forNode:" : " 3/10/2017 10:32:04",
+		"asInducedPropagationGraph" : " 3/10/2017 10:32:04",
+		"initialize" : " 3/10/2017 10:32:04",
+		"incomingEdgesLabelled:forNode:" : " 3/10/2017 10:32:04",
+		"asInducedPropagationGraphWithFromToBlock:toFromBlock:" : " 3/10/2017 10:32:04"
+	},
+	"class" : { }
+}

@@ -1,15 +1,14 @@
 {
-	"category" : "SimilarityFlooding-DataStructures",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/13/2016 10:07",
+	"super" : "SFEdgeBasedGraph",
+	"category" : "SimilarityFlooding-DataStructures",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"incomingEdges",
-		"outgoingEdges" ],
+		"outgoingEdges"
+	],
 	"name" : "SFPairwiseConnectivityGraph",
-	"pools" : [
-		 ],
-	"super" : "SFEdgeBasedGraph",
-	"type" : "normal" }
+	"type" : "normal"
+}

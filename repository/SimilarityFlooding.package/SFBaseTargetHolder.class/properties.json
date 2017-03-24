@@ -1,15 +1,14 @@
 {
-	"category" : "SimilarityFlooding-DataStructures",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/21/2016 10:11",
+	"super" : "Object",
+	"category" : "SimilarityFlooding-DataStructures",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"baseEntity",
-		"targetEntity" ],
+		"targetEntity"
+	],
 	"name" : "SFBaseTargetHolder",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

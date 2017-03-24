@@ -1,14 +1,13 @@
 {
-	"category" : "SimilarityFlooding-GraphBuilder",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 12/2/2016 15:34",
-	"instvars" : [
-		"graph" ],
-	"name" : "SFAbstractGraphBuilder",
-	"pools" : [
-		 ],
 	"super" : "FAMIXVisitor",
-	"type" : "normal" }
+	"category" : "SimilarityFlooding-GraphBuilder",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"graph"
+	],
+	"name" : "SFAbstractGraphBuilder",
+	"type" : "normal"
+}

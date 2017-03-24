@@ -1,14 +1,13 @@
 {
-	"category" : "SimilarityFlooding-DataStructures",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/21/2016 09:37",
-	"instvars" : [
-		"relativeSigmaValue" ],
-	"name" : "SFMatchCandidateWithRelativeSigma",
-	"pools" : [
-		 ],
 	"super" : "SFMatchCandidate",
-	"type" : "normal" }
+	"category" : "SimilarityFlooding-DataStructures",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"relativeSigmaValue"
+	],
+	"name" : "SFMatchCandidateWithRelativeSigma",
+	"type" : "normal"
+}

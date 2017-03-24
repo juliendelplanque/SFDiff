@@ -1,14 +1,11 @@
 {
-	"category" : "SimilarityFlooding-Filters",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/19/2016 11:28",
-	"instvars" : [
-		 ],
-	"name" : "SFSameBaseAndTargetType",
-	"pools" : [
-		 ],
 	"super" : "SFFilter",
-	"type" : "normal" }
+	"category" : "SimilarityFlooding-Filters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SFSameBaseAndTargetType",
+	"type" : "normal"
+}

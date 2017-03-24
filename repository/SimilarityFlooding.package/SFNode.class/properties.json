@@ -1,14 +1,11 @@
 {
-	"category" : "SimilarityFlooding-DataStructures",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/12/2016 14:33",
-	"instvars" : [
-		 ],
-	"name" : "SFNode",
-	"pools" : [
-		 ],
 	"super" : "SFBaseTargetHolder",
-	"type" : "normal" }
+	"category" : "SimilarityFlooding-DataStructures",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SFNode",
+	"type" : "normal"
+}

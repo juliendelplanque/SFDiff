@@ -1,10 +1,10 @@
 {
-	"category" : "SimilarityFlooding-DataStructures",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/13/2016 09:54",
+	"super" : "SFEdgeBasedGraph",
+	"category" : "SimilarityFlooding-DataStructures",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"sigmaValues",
 		"initialSigmaValues",
@@ -13,9 +13,8 @@
 		"epsilon",
 		"iterationCount",
 		"maximalIterationCount",
-		"neighbourhoodDict" ],
+		"neighbourhoodDict"
+	],
 	"name" : "SFInducedPropagationGraph",
-	"pools" : [
-		 ],
-	"super" : "SFEdgeBasedGraph",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,15 +1,14 @@
 {
-	"category" : "SimilarityFlooding-DataStructures",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/13/2016 11:34",
+	"super" : "SFEdge",
+	"category" : "SimilarityFlooding-DataStructures",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"name",
-		"isForComposition" ],
+		"isForComposition"
+	],
 	"name" : "SFNamedEdge",
-	"pools" : [
-		 ],
-	"super" : "SFEdge",
-	"type" : "normal" }
+	"type" : "normal"
+}

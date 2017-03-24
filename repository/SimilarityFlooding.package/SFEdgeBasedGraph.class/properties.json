@@ -1,14 +1,13 @@
 {
-	"category" : "SimilarityFlooding-DataStructures",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JulienDelplanque 10/13/2016 10:02",
-	"instvars" : [
-		"edges" ],
-	"name" : "SFEdgeBasedGraph",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "SimilarityFlooding-DataStructures",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"edges"
+	],
+	"name" : "SFEdgeBasedGraph",
+	"type" : "normal"
+}
