@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JulienDelplanque 3/27/2017 10:12",
+	"super" : "SFAssociationsDiff",
+	"category" : "SimilarityFlooding-Diff",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SFAssociationsDiffForOrion",
+	"type" : "normal"
+}

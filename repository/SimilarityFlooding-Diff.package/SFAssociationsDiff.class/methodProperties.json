@@ -1,19 +1,21 @@
 {
 	"instance" : {
 		"computeDiff" : "JulienDelplanque 3/13/2017 21:55",
-		"versionAndRemovalChanges" : "JulienDelplanque 3/14/2017 08:44",
-		"targetAssociations:" : "JulienDelplanque 3/13/2017 21:29",
+		"versionAndRemovalChanges" : "JulienDelplanque 3/27/2017 10:21",
 		"changes" : "JulienDelplanque 3/13/2017 21:40",
-		"targetAssociations" : "JulienDelplanque 3/13/2017 21:29",
-		"changes:" : "JulienDelplanque 3/13/2017 21:40",
+		"baseModel:" : "JulienDelplanque 3/27/2017 10:13",
+		"targetAssociations" : "JulienDelplanque 3/27/2017 10:15",
 		"entitiesVersionChanges" : "JulienDelplanque 3/13/2017 21:34",
-		"baseAssociations" : "JulienDelplanque 3/13/2017 21:29",
+		"baseAssociations" : "JulienDelplanque 3/27/2017 10:15",
 		"initialize" : "JulienDelplanque 3/13/2017 21:40",
-		"baseAssociations:" : "JulienDelplanque 3/13/2017 21:29",
-		"versionAndAddChanges" : "JulienDelplanque 3/14/2017 08:50",
-		"entitiesVersionChanges:" : "JulienDelplanque 3/13/2017 21:34"
+		"changes:" : "JulienDelplanque 3/13/2017 21:40",
+		"versionAndAddChanges" : "JulienDelplanque 3/27/2017 10:21",
+		"targetModel" : "JulienDelplanque 3/27/2017 10:13",
+		"targetModel:" : "JulienDelplanque 3/27/2017 10:13",
+		"entitiesVersionChanges:" : "JulienDelplanque 3/13/2017 21:34",
+		"baseModel" : "JulienDelplanque 3/27/2017 10:13"
 	},
 	"class" : {
-		"baseAssociations:targetAssociations:entitiesVersionChanges:" : "JulienDelplanque 3/13/2017 21:48"
+		"baseModel:targetModel:entitiesVersionChanges:" : "JulienDelplanque 3/27/2017 10:18"
 	}
 }

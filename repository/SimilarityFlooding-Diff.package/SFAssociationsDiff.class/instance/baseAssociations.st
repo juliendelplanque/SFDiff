@@ -1,3 +1,3 @@
 accessing
 baseAssociations
-	^ baseAssociations
+	^ baseAssociations ifNil: [ baseAssociations := (self baseModel allWithSubTypesOf: FAMIXAssociation) entities ]

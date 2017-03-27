@@ -16,7 +16,8 @@
 		"pairwiseTime",
 		"changeBuildingTime",
 		"inducedPropagationTime",
-		"sfTime"
+		"sfTime",
+		"associationDiffClass"
 	],
 	"name" : "SFDiff",
 	"type" : "normal"

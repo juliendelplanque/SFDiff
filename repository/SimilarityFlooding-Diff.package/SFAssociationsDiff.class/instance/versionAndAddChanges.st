@@ -1,6 +1,6 @@
 diffing
 versionAndAddChanges
-	targetAssociations do: [ :assoc | |change1|
+	self targetAssociations do: [ :assoc | |change1|
 			[
 				change1 := self entitiesVersionChanges detect: [ :change |
 					change targetEntity = assoc from ].
@@ -8,7 +8,7 @@ versionAndAddChanges
 					ifFalse: [ |change2|
 						change2 := self entitiesVersionChanges detect: [ :change |
 							change targetEntity = assoc to ].
-						baseAssociations
+						self baseAssociations
 							detect: [ :targetAssoc |
 								targetAssoc from = change1 baseEntity and: [ targetAssoc to = change2 baseEntity ] ]
 							ifFound: [ :targetAssoc |
