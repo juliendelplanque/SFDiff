@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JulienDelplanque 3/27/2017 10:12",
 	"super" : "SFAssociationsDiff",
-	"category" : "SimilarityFlooding-Diff",
+	"category" : "SimilarityFlooding-DiffOrion",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

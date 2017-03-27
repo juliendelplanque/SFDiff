@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"changesWithTargetEntityIncludedIn:" : "JulienDelplanque 3/27/2017 18:25",
+		"changeWithBaseEntityEqualsTo:" : "JulienDelplanque 3/27/2017 18:23",
+		"changesWithBaseEntityIncludedIn:" : "JulienDelplanque 3/27/2017 18:24",
+		"changeWithTargetEntityEqualsTo:" : "JulienDelplanque 3/27/2017 18:23",
+		"findTargetAssociationCorrespondingTo:withFromChange:toChanges:" : "JulienDelplanque 3/27/2017 18:33",
+		"findBaseAssociationCorrespondingTo:withFromChange:toChanges:" : "JulienDelplanque 3/27/2017 18:29"
+	},
+	"class" : { }
+}

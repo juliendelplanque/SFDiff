@@ -6,4 +6,5 @@ definePackages: spec
 		package: 'SimilarityFlooding-Diff' with: [ spec requires: #('SimilarityFlooding') ];
 		package: 'SimilarityFlooding-Diff-Tests' with: [ spec requires: #('SimilarityFlooding-Diff') ];
 		package: 'SimilarityFlooding-Evaluator' with: [ spec requires: #('SimilarityFlooding' 'FamixDiff') ];
+		package: 'SimilarityFlooding-DiffOrion' with: [ spec requires: #('SimilarityFlooding-Diff') ];
 		yourself
