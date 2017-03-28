@@ -4,4 +4,5 @@ initialize
 	self
 		changes: OrderedCollection new;
 		inducedPropagationGraphFormulaSelector: #useFormulaC;
-		candidateChooserClass: SFMatchedChildrenChooser
+		candidateChooserClass: SFMatchedChildrenChooser;
+		equalEntitiesFinder: SFEqualEntitiesFinderForOrion

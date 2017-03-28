@@ -17,7 +17,8 @@
 		"changeBuildingTime",
 		"inducedPropagationTime",
 		"sfTime",
-		"associationDiffClass"
+		"associationDiffClass",
+		"equalEntitiesFinder"
 	],
 	"name" : "SFDiff",
 	"type" : "normal"

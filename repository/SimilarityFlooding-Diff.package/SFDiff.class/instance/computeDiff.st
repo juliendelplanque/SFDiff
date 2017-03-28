@@ -6,7 +6,7 @@ computeDiff
 	baseGraph := SFGenericGraphBuilder graphBuiltFromModel: self baseModel.
 	targetGraph := SFGenericGraphBuilder graphBuiltFromModel: self targetModel.
 	preprocessTime := [
-		matches := SFEqualEntitiesFinder new
+		matches := self equalEntitiesFinder new
 							baseModel: self baseModel;
 							targetModel: self targetModel;
 							findEqualEntities ] timeToRun.
