@@ -18,7 +18,8 @@
 		"inducedPropagationTime",
 		"sfTime",
 		"associationDiffClass",
-		"equalEntitiesFinder"
+		"equalEntitiesFinder",
+		"graphBuilder"
 	],
 	"name" : "SFDiff",
 	"type" : "normal"

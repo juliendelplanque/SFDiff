@@ -5,4 +5,5 @@ initialize
 		changes: OrderedCollection new;
 		inducedPropagationGraphFormulaSelector: #useFormulaC;
 		candidateChooserClass: SFMatchedChildrenChooser;
-		equalEntitiesFinder: SFEqualEntitiesFinderForOrion
+		equalEntitiesFinder: SFEqualEntitiesFinder;
+		graphBuilder: SFGenericGraphBuilder

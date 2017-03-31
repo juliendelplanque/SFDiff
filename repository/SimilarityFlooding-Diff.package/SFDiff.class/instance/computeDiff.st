@@ -3,8 +3,8 @@ computeDiff
 	| baseGraph targetGraph matches pairwise inducedPropagation |
 	self baseModel prepareToDiff.
 	self targetModel prepareToDiff.
-	baseGraph := SFGenericGraphBuilder graphBuiltFromModel: self baseModel.
-	targetGraph := SFGenericGraphBuilder graphBuiltFromModel: self targetModel.
+	baseGraph := self graphBuilder graphBuiltFromModel: self baseModel.
+	targetGraph := self graphBuilder graphBuiltFromModel: self targetModel.
 	preprocessTime := [
 		matches := self equalEntitiesFinder new
 							baseModel: self baseModel;
