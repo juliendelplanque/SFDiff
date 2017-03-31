@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"graph"
+		"graph",
+		"model"
 	],
 	"name" : "SFAbstractGraphBuilder",
 	"type" : "normal"

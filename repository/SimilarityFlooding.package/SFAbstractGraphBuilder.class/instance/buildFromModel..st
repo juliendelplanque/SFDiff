@@ -1,3 +1,3 @@
 building
 buildFromModel: aMooseModel
-	^ self subclassResponsibility
+	self model: aMooseModel
