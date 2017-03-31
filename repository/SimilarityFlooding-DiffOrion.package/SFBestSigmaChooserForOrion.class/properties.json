@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SFBestSigmaChooser",
+	"category" : "SimilarityFlooding-DiffOrion",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SFBestSigmaChooserForOrion",
+	"type" : "normal"
+}

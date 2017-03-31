@@ -1,9 +1,0 @@
-{
-	"instance" : {
-		"generateAddChanges" : "JulienDelplanque 3/28/2017 17:18",
-		"initialize" : "JulienDelplanque 3/28/2017 17:44",
-		"generateMoveAndRenameChangesFromCandidates:" : "JulienDelplanque 3/28/2017 17:09",
-		"generateRemovalChanges" : "JulienDelplanque 3/28/2017 13:13"
-	},
-	"class" : { }
-}

@@ -1,4 +1,6 @@
 initialization
 initialize
 	super initialize.
-	self equalEntitiesFinder: SFEqualEntitiesFinderForOrion
+	self
+		equalEntitiesFinder: SFEqualEntitiesFinderForOrion;
+		graphBuilder: SFGraphBuilderForOrion
