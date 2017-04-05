@@ -1,19 +1,16 @@
 diffing
 computeDiff
-	| baseGraph targetGraph matches pairwise inducedPropagation |
+	| candidates matches inducedPropagation |
 	self baseModel prepareToDiff.
 	self targetModel prepareToDiff.
-	baseGraph := self graphBuilder graphBuiltFromModel: self baseModel.
-	targetGraph := self graphBuilder graphBuiltFromModel: self targetModel.
+	candidates := #().
 	preprocessTime := [
 		matches := self equalEntitiesFinder new
 							baseModel: self baseModel;
 							targetModel: self targetModel;
 							findEqualEntities ] timeToRun.
-	pairwiseTime := [ pairwise := baseGraph pairwiseConnectivityGraphWith: targetGraph knowingMatches: matches ] timeToRun.
-	inducedPropagationTime := [ inducedPropagation := pairwise asInducedPropagationGraph ] timeToRun.
-	inducedPropagation
-		initialSigmaValues: (inducedPropagation nodes collect: [ :node | node -> 1 ]) asDictionary.
-	self inducedPropagationGraphFormulaSelector value: inducedPropagation.
-	sfTime := [ inducedPropagation similarityFlooding ] timeToRun.
-	changeBuildingTime := [ self buildChangesFrom: inducedPropagation matchCandidates withKnownMatches: matches ] timeToRun
+	(self shouldDoSFDiff: matches)
+			ifTrue: [ 
+				inducedPropagation := self doSFDiffWith: matches.
+				candidates := inducedPropagation matchCandidates ].
+	changeBuildingTime := [ self buildChangesFrom: candidates withKnownMatches: matches ] timeToRun
