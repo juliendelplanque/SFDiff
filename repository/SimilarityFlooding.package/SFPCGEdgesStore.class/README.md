@@ -1,0 +1,1 @@
+I am a datastructure for storing edges in a Pairwise Connectivity Graph.

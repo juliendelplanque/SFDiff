@@ -1,3 +1,3 @@
 accessing - computed
 outgoingEdgesOf: aNode
-	^ outgoingEdges at: aNode ifAbsent: [ ^#() ]
+	^ outgoingEdges edgesOf: aNode

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JulienDelplanque 4/12/2017 11:43",
+	"super" : "Object",
+	"category" : "SimilarityFlooding-DataStructures",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nodeToEdgesDict",
+		"edgeDictKeyBlock",
+		"edgeDictSubkeyBlock"
+	],
+	"name" : "SFPCGEdgesStore",
+	"type" : "normal"
+}
