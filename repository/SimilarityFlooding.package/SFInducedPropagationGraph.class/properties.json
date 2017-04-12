@@ -13,7 +13,8 @@
 		"epsilon",
 		"iterationCount",
 		"maximalIterationCount",
-		"neighbourhoodDict"
+		"neighbourhoodDict",
+		"nodes"
 	],
 	"name" : "SFInducedPropagationGraph",
 	"type" : "normal"
