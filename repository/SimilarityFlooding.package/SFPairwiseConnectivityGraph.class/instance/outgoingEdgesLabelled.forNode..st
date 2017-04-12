@@ -1,3 +1,3 @@
 accessing - computed
 outgoingEdgesLabelled: aString forNode: aNode
-	^ (outgoingEdges at: aNode ifAbsent: [ ^#() ]) select: [ :edge | edge name = aString ]
+	^ (self outgoingEdgesOf: aNode) select: [ :edge | edge name = aString ]
