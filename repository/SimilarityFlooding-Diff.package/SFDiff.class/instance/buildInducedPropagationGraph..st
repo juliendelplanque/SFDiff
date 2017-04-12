@@ -1,0 +1,3 @@
+diffing
+buildInducedPropagationGraph: pairwise
+	^ pairwise asInducedPropagationGraph
