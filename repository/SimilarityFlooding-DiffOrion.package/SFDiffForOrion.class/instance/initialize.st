@@ -5,4 +5,5 @@ initialize
 		equalEntitiesFinder: SFEqualEntitiesFinderForOrion;
 		graphBuilder: SFGraphBuilderForOrion;
 		associationDiffClass: SFAssociationsDiffForOrion;
-		matchThreshold: 0.1
+		candidateChooserClass: SFBestSigmaChooserForOrion;
+		matchThreshold: 0.001
