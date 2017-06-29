@@ -10,5 +10,5 @@ areParentEntitiesEqualsFor: anEntity and: anotherEntity knowingNewMatches: newMa
 				allSatisfy: [ :entityParent | 
 				anotherEntityParents
 					anySatisfy: [ :anotherEntityParent |
-						(self knownMatches anySatisfy: [ :any | (any head versionIn: self sfDiff baseModel) = entityParent and: [ (any tail versionIn: self sfDiff targetModel) = anotherEntityParent ] ])
+						(self knownMatches associations anySatisfy: [ :any | (any head versionIn: self sfDiff baseModel) = entityParent and: [ (any tail versionIn: self sfDiff targetModel) = anotherEntityParent ] ])
 							or: [ newMatches anySatisfy: [ :any | (any head versionIn: self sfDiff baseModel) = entityParent and: [ (any tail versionIn: self sfDiff targetModel) = anotherEntityParent ] ] ] ] ] ]

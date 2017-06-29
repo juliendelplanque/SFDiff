@@ -6,6 +6,7 @@ generateMoveAndRenameChangesFromCandidates: matchCandidates knownMatches: matche
 								knownMatches: matches;
 								yourself.
 	newMatches := candidateChooser selectCandidates: matchCandidates.
+	"self halt."
 	"Generate version changes for new matches."
 	newMatches reject: #isVersion thenDo: [ :match |
 		self changes add: match ].
