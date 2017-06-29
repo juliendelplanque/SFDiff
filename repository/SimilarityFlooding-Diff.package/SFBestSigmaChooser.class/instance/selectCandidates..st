@@ -1,28 +1,36 @@
 selecting
 selectCandidates: matchCandidates
-	| groupedByType newMatches |
+	| groupedByType newMatches containmentOrder |
 	groupedByType := matchCandidates groupedBy: [ :match | (self baseEntityOf: match) class ].
-	newMatches := OrderedCollection new.
-	(groupedByType associations sorted: [ :a :b | a head asString < b head asString ])
+	newMatches := Set new.
+	containmentOrder := { ORNamespace . ORPackage . ORClass . ORMethod . ORAttribute . ORLocalVariable . ORParameter }. self flag: #todo. "Let the user configure it."
+	(groupedByType associations sorted: [ :a :b | (containmentOrder indexOf: a head) < (containmentOrder indexOf: b head) ])
 		collect: #tail
 		thenDo: [ :m | 
 			| sorted |
-			sorted := m sorted: [ :a :b | a sigmaValue >= b sigmaValue ].
+			sorted := (m reject: [ :match | newMatches anySatisfy: [ :any | (self baseEntityOf: any) = (self baseEntityOf: match) ] ]) sorted: [ :a :b | a sigmaValue >= b sigmaValue ].
 			[ sorted isNotEmpty and: [ sorted first sigmaValue >= self sfDiff matchThreshold ] ]
-				whileTrue: [ | match |
+				whileTrue: [ | match equalMatches|
 					match := sorted first.
+					"newMatches inspect.
+					self halt."
 					sorted := sorted allButFirst reject: [ :each | (self baseEntityOf: each) = (self baseEntityOf: match) or: [ (self targetEntityOf: each) = (self targetEntityOf: match) ] ].
-					newMatches := newMatches union: (self retryEqualMatchFor: (self baseEntityOf: match) and: (self targetEntityOf: match)).
-					(self canGenerateMoveFrom: match)
+					equalMatches := self retryEqualMatchFor: (self baseEntityOf: match) and: (self targetEntityOf: match).
+					"equalMatches do: [ :em |
+						(newMatches anySatisfy: [ :any | (self baseEntityOf: any) = (self baseEntityOf: em) ]) ifFalse: [ newMatches add: em ] ]."
+					newMatches addAll: equalMatches.
+					(self canGenerateMoveFrom: match knowingNewMatches: newMatches)
 						ifTrue: [ 
 							newMatches add: (FamixMoveChange new
 													baseEntity: (self baseEntityOf: match);
 													targetEntity: (self targetEntityOf: match);
 													yourself) ].
-					(self canGenerateRenameFrom: match)
+					(self canGenerateRenameFrom: match knowingNewMatches: newMatches)
 						ifTrue: [ 
 							newMatches add: (FamixRenameChange new
 													baseEntity: (self baseEntityOf: match);
 													targetEntity: (self targetEntityOf: match);
-													yourself) ] ] ].
+													yourself) ].
+					"((self canGenerateMoveFrom: match knowingNewMatches: newMatches) or: [ (self canGenerateRenameFrom: match knowingNewMatches: newMatches) ])
+						ifFalse: [ match inspect. self halt  ]" "Should never happen! If it does, something is wrong." ] ].
 	^ newMatches

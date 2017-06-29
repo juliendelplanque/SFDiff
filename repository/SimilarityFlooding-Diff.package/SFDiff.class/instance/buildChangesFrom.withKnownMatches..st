@@ -6,7 +6,7 @@ buildChangesFrom: matchCandidates withKnownMatches: matches
 					match baseEntity class = MooseModel or: [ (matches includesKey: match baseEntity) or: [ matches includes: match targetEntity ] ] ].
 	filtered :=  SFSameBaseAndTargetType filter: (SFNotStub filter: filtered).
 	self
-		generateMoveAndRenameChangesFromCandidates: filtered;
+		generateMoveAndRenameChangesFromCandidates: filtered knownMatches: matches;
 		generateRemovalChanges;
 		generateAddChanges;
 		generateAssociationChanges

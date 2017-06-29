@@ -2,7 +2,8 @@
 	"classtraitcomposition" : "SFTHelper classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"sfDiff"
+		"sfDiff",
+		"knownMatches"
 	],
 	"name" : "SFCandidateChooser",
 	"commentStamp" : "JulienDelplanque 12/16/2016 11:59",
