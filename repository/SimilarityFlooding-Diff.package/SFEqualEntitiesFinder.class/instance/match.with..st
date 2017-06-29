@@ -16,4 +16,4 @@ match: modelAEntities with: modelBEntities
 					childrenOfB do: [ :e | e privateState attributeAt: #sfMarked put: false ].
 					self
 						addMatchedEntities: entityA -> entityB;
-						match: childrenOfA with: childrenOfB ] ] displayingProgress: 'SFEqual entities finder'
+						match: childrenOfA with: childrenOfB ] ]
