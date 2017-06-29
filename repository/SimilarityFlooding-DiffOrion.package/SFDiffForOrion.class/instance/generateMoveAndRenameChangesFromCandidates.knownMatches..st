@@ -1,8 +1,9 @@
 change generation
-generateMoveAndRenameChangesFromCandidates: matchCandidates
+generateMoveAndRenameChangesFromCandidates: matchCandidates knownMatches: matches
 	| candidateChooser newMatches |
 	candidateChooser := self candidateChooserClass new
 								sfDiff: self;
+								knownMatches: matches;
 								yourself.
 	newMatches := candidateChooser selectCandidates: matchCandidates.
 	"Generate version changes for new matches."
