@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SFCandidateChooser",
+	"category" : "SimilarityFlooding-DiffOrion",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SFStableMarriageCandidateChooser",
+	"type" : "normal"
+}

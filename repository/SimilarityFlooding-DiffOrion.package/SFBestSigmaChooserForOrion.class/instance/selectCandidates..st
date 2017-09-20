@@ -10,7 +10,7 @@ selectCandidates: matchCandidates
 	ORMethod.
 	ORAttribute.
 	ORLocalVariable.
-	ORParameter}.
+	ORParameter}. "self halt."
 	self flag: #todo.	"Let the user configure it."
 	(groupedByType associations
 		sorted: [ :a :b | (containmentOrder indexOf: a head) < (containmentOrder indexOf: b head) ])
@@ -24,7 +24,7 @@ selectCandidates: matchCandidates
 			[ sorted isNotEmpty and: [ sorted first sigmaValue >= self sfDiff matchThreshold ] ]
 				whileTrue: [ | match equalMatches |
 					match := sorted first.
-					"Halt if: [ match baseEntity name = 'C38' ]."
+					Halt if: [ (self baseEntityOf: match) name = 'A391' ].
 					"newMatches inspect.
 					self halt."
 					sorted := sorted allButFirst
