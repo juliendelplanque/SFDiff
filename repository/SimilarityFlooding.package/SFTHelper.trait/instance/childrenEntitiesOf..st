@@ -1,3 +1,3 @@
 helpers
 childrenEntitiesOf: anEntity
-	^ anEntity childrenEntities reject: [ :e | e isNil ]
+	^ anEntity children reject: [ :e | e isNil ]
