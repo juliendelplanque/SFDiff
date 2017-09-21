@@ -1,5 +1,5 @@
 {
-	"classtraitcomposition" : "SFTHelper classTrait",
+	"classtraitcomposition" : "SFTHelper classTrait + SFTFamixModelManipulator classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"matchedEntities",
@@ -9,7 +9,7 @@
 	"name" : "SFEqualEntitiesFinder",
 	"commentStamp" : "JulienDelplanque 12/11/2016 12:55",
 	"super" : "Object",
-	"traitcomposition" : "SFTHelper",
+	"traitcomposition" : "SFTHelper + SFTFamixModelManipulator",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
