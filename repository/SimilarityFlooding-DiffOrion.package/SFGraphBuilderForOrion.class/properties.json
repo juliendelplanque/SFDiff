@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "SFGenericGraphBuilder",
-	"category" : "SimilarityFlooding-DiffOrion",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "SFTOrionModelManipulator classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "SFGraphBuilderForOrion",
-	"type" : "normal"
+	"commentStamp" : "JulienDelplanque 9/21/2017 19:14",
+	"super" : "SFGenericGraphBuilder",
+	"traitcomposition" : "SFTOrionModelManipulator",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SimilarityFlooding-DiffOrion"
 }
