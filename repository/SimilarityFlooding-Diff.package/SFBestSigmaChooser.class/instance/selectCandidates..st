@@ -1,17 +1,10 @@
 selecting
 selectCandidates: matchCandidates
-	| groupedByType newMatches containmentOrder |
+	| groupedByType newMatches |
+	self halt: 'This method is broken and should be fixed one day...'.
 	groupedByType := matchCandidates groupedBy: [ :match | (self baseEntityOf: match) class ].
 	newMatches := Set new.
-	containmentOrder := {ORNamespace.
-	ORPackage.
-	ORClass.
-	ORMethod.
-	ORAttribute.
-	ORLocalVariable.
-	ORParameter}.
-	self flag: #todo.	"Let the user configure it."
-	(groupedByType associations sorted: [ :a :b | (containmentOrder indexOf: a head) < (containmentOrder indexOf: b head) ])
+	(groupedByType associations sorted: [ :a :b | (self containmentOrder indexOf: a head) < (self containmentOrder indexOf: b head) ])
 		collect: #tail
 		thenDo: [ :m | 
 			| sorted |
