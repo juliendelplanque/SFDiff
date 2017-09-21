@@ -1,5 +1,5 @@
 {
-	"classtraitcomposition" : "SFTHelper classTrait",
+	"classtraitcomposition" : "SFTHelper classTrait + SFTFamixModelManipulator classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"buildStack"
@@ -7,7 +7,7 @@
 	"name" : "SFGenericGraphBuilder",
 	"commentStamp" : "JulienDelplanque 12/2/2016 15:36",
 	"super" : "SFAbstractGraphBuilder",
-	"traitcomposition" : "SFTHelper",
+	"traitcomposition" : "SFTHelper + SFTFamixModelManipulator",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
