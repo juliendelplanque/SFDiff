@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SFBestSigmaChooser",
-	"category" : "SimilarityFlooding-DiffOrion",
+	"category" : "SimilarityFlooding-DiffOrion-CandidatesChooser",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
