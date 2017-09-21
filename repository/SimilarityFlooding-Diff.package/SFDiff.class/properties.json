@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JulienDelplanque 10/26/2016 09:18",
 	"super" : "Object",
-	"category" : "SimilarityFlooding-Diff",
+	"category" : "SimilarityFlooding-Diff-Diffs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

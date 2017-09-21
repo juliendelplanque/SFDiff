@@ -13,5 +13,5 @@
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"category" : "SimilarityFlooding-Diff"
+	"category" : "SimilarityFlooding-Diff-Finder"
 }

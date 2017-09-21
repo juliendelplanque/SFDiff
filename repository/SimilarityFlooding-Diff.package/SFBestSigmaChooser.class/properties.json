@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JulienDelplanque 12/16/2016 14:02",
 	"super" : "SFCandidateChooser",
-	"category" : "SimilarityFlooding-Diff",
+	"category" : "SimilarityFlooding-Diff-CandidatesChooser",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

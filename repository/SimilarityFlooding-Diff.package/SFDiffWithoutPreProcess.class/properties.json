@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JulienDelplanque 3/3/2017 16:08",
 	"super" : "SFDiff",
-	"category" : "SimilarityFlooding-Diff",
+	"category" : "SimilarityFlooding-Diff-Diffs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
