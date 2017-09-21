@@ -1,58 +1,28 @@
 selecting
 selectCandidates: matchCandidates
-	| groupedByType newMatches containmentOrder |
+	| groupedByType newMatches |
 	groupedByType := matchCandidates
 		groupedBy: [ :match | (self baseEntityOf: match) class ].
 	newMatches := Set new.
-	containmentOrder := {ORNamespace.
-	ORPackage.
-	ORClass.
-	ORMethod.
-	ORAttribute.
-	ORLocalVariable.
-	ORParameter}. "self halt."
-	self flag: #todo.	"Let the user configure it."
 	(groupedByType associations
-		sorted: [ :a :b | (containmentOrder indexOf: a head) < (containmentOrder indexOf: b head) ])
+		sorted: [ :a :b | (self containmentOrder indexOf: a head) < (self containmentOrder indexOf: b head) ])
 		collect: #tail
-		thenDo: [ :m | 
+		thenDo: [ :m |
 			| sorted |
-			sorted := (m
-				reject:
-					[ :match | newMatches anySatisfy: [ :any | (self baseEntityOf: any) = (self baseEntityOf: match) ] ])
-				sorted: [ :a :b | a sigmaValue >= b sigmaValue ].
+			sorted := self sortBySigmaValueDesc: m andRemoveMatchesIncludedIn: newMatches.
+			"Perform the while's block until there is no more match to process (#sorted is empty)
+			 or the element with the greater sigma value of #sorted is smaller than the match threshold."
 			[ sorted isNotEmpty and: [ sorted first sigmaValue >= self sfDiff matchThreshold ] ]
-				whileTrue: [ | match equalMatches |
+				whileTrue: [ | match |
 					match := sorted first.
-					Halt if: [ (self baseEntityOf: match) name = 'A391' ].
-					"newMatches inspect.
-					self halt."
-					sorted := sorted allButFirst
-						reject: [ :each | 
-							(self baseEntityOf: each) = (self baseEntityOf: match)
-								or: [ (self targetEntityOf: each) = (self targetEntityOf: match) ] ].
-					equalMatches := self
-						retryEqualMatchFor: (self baseEntityOf: match)
-						and: (self targetEntityOf: match).
-					"equalMatches do: [ :em |
-						(newMatches anySatisfy: [ :any | (self baseEntityOf: any) = (self baseEntityOf: em) ]) ifFalse: [ newMatches add: em ] ]."
-					newMatches addAll: equalMatches.
-					(self canGenerateMoveFrom: match knowingNewMatches: newMatches)
-						ifTrue: [ newMatches
-								add:
-									(FamixMoveChange new
-										baseEntity: (self baseEntityOf: match);
-										targetEntity: (self targetEntityOf: match);
-										yourself) ].
-					(self canGenerateRenameFrom: match knowingNewMatches: newMatches)
-						ifTrue:
-							[ "((self canGenerateMoveFrom: match knowingNewMatches: newMatches) or: [ (self canGenerateRenameFrom: match knowingNewMatches: newMatches) ])
-						ifFalse: [ match inspect. self halt  ]"
-							"Should never happen! If it does, something is wrong."
-							newMatches
-								add:
-									(FamixRenameChange new
-										baseEntity: (self baseEntityOf: match);
-										targetEntity: (self targetEntityOf: match);
-										yourself) ] ] ].
+					"Since at this step, #match is considered as being the right mapping of entities
+					 between the first and the second version of the model, we remove all other
+					 potential mapping that contain either the base or the target entity of #match."
+					sorted := self filterMappingsIn: sorted allButFirst incoherentWithAcceptedMapping: match.
+					"Now that we consider #match to be a correct mapping, we retry an equal match in
+					 order to try to generate version change from entities contained in the entities
+					 matched. This step may eventually prune future matches to be processed."
+					newMatches addAll: (self retryEqualMatchFor: (self baseEntityOf: match) and: (self targetEntityOf: match)).
+					"Finally, generate the move or rename change corresponding to the #match mapping."
+					self generateMoveOrRenameChangeFrom: match in: newMatches ] ].
 	^ newMatches

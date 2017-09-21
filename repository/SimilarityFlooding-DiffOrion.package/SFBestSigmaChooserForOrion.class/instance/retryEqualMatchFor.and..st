@@ -3,8 +3,9 @@ retryEqualMatchFor: baseEntity and: targetEntity
 	^ (SFEqualEntitiesFinderForOrion new
 			baseModel: self sfDiff baseModel;
 			targetModel: self sfDiff targetModel;
-			matchChildrenOf: baseEntity withChildrenOf: targetEntity) associations collect: [ :candidate |
+			matchChildrenOf: (self entity: baseEntity in: self sfDiff baseModel)
+			withChildrenOf: (self entity: targetEntity in: self sfDiff targetModel)) associations collect: [ :candidate |
 				FamixVersionChange new
-					baseEntity: candidate head;
-					targetEntity: candidate tail;
+					baseEntity: (self entity: candidate head in: self sfDiff baseModel);
+					targetEntity: (self entity: candidate tail in: self sfDiff targetModel);
 					yourself ]

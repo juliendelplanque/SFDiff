@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "SFBestSigmaChooser",
-	"category" : "SimilarityFlooding-DiffOrion-CandidatesChooser",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "SFTOrionModelManipulator classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "SFBestSigmaChooserForOrion",
-	"type" : "normal"
+	"commentStamp" : "JulienDelplanque 9/21/2017 21:20",
+	"super" : "SFBestSigmaChooser",
+	"traitcomposition" : "SFTOrionModelManipulator",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SimilarityFlooding-DiffOrion-CandidatesChooser"
 }

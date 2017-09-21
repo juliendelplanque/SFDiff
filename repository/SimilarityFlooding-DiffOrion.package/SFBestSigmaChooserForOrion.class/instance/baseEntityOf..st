@@ -1,3 +1,3 @@
 helpers
 baseEntityOf: aMatch
-	^ (super baseEntityOf: aMatch) versionIn: sfDiff baseModel
+	^ self entity: (super baseEntityOf: aMatch) in: sfDiff baseModel

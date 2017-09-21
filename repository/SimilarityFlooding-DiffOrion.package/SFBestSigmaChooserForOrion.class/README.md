@@ -1,0 +1,1 @@
+Same as my superclass but adapted to Orion's specificities.
