@@ -1,9 +1,5 @@
 {
-	"commentStamp" : "JulienDelplanque 3/13/2017 21:29",
-	"super" : "Object",
-	"category" : "SimilarityFlooding-Diff",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "SFTFamixModelManipulator classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"entitiesVersionChanges",
@@ -14,5 +10,11 @@
 		"changes"
 	],
 	"name" : "SFAssociationsDiff",
-	"type" : "normal"
+	"commentStamp" : "JulienDelplanque 3/13/2017 21:29",
+	"super" : "Object",
+	"traitcomposition" : "SFTFamixModelManipulator",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SimilarityFlooding-Diff"
 }

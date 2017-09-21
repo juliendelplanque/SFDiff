@@ -1,0 +1,1 @@
+I am the trait defining how to manipulate entities of a FAMIX model.
