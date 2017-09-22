@@ -1,6 +1,7 @@
 *SimilarityFlooding-DiffOrion
 orionPairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: matchesDict baseModel: baseModel targetModel: targetModel
 	| graph matchesDictAssoc |
+	self halt: 'There is still a problem here. It is not because one part of an edge is not coherent with known matches that the other part is not be be included in the PCG. Nevertheless, for now, a SFPairwiseConnectivityGraph only stores edges, it can not store single nodes... This has to be fixed'.
 	graph := SFPairwiseConnectivityGraph new.
 	matchesDictAssoc := matchesDict associations.
 	self edges do: [ :edge |
