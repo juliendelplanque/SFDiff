@@ -1,6 +1,7 @@
 pairwise connectivity graph
 pairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: aDictionary
 	| graph |
+	self halt: 'The logic used to prune nodes in the PCG is wrong.'.
 	graph := SFPairwiseConnectivityGraph new.
 	self edges do: [ :edge |
 		(aDictionary includesAssociation: edge from -> edge to)
