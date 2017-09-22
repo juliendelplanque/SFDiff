@@ -1,7 +1,7 @@
 building
 recursiveBuildFromModelEntities: famixEntities
 	famixEntities
-		do: [ :entity | 
+		do: [ :entity |
 			buildStack isEmpty
 				ifFalse: [ | from to |
 					from := self entity: buildStack top in: self model.
