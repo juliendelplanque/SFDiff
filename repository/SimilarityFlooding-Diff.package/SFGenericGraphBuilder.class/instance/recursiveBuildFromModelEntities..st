@@ -12,7 +12,7 @@ recursiveBuildFromModelEntities: famixEntities
 									(SFNamedEdge
 										from: from
 										to: to
-										named: from className , to name
+										named: from className , to className
 										forComposition: true) ] ].
 			buildStack push: (self entity: entity in: self model).
 			self recursiveBuildFromModelEntities: (self childrenEntitiesOf: (self entity: entity in: self model)).
