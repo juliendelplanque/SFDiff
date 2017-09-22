@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "JulienDelplanque 3/28/2017 13:21",
-	"super" : "SFDiff",
-	"category" : "SimilarityFlooding-DiffOrion-Diffs",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "SFTOrionModelManipulator classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "SFDiffForOrion",
-	"type" : "normal"
+	"commentStamp" : "JulienDelplanque 3/28/2017 13:21",
+	"super" : "SFDiff",
+	"traitcomposition" : "SFTOrionModelManipulator",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SimilarityFlooding-DiffOrion-Diffs"
 }
