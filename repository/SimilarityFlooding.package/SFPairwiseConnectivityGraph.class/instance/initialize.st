@@ -8,4 +8,5 @@ initialize
 	outgoingEdges := SFPCGEdgesStore new
 								edgeDictKeyBlock: [ :e | e from ];
 								edgeDictSubkeyBlock: [ :e | e name ];
-								yourself
+								yourself.
+	nodes := Set new
