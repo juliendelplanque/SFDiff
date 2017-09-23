@@ -5,7 +5,6 @@ baseModel: baseModel targetModel: targetModel associationDiffClass: aClass
 	^ self new
 		baseModel: baseModel;
 		targetModel: targetModel;
-		matchThreshold: 0.01;
 		candidateChooserClass: SFBestSigmaChooser;
 		associationDiffClass: aClass;
 		computeDiff;
