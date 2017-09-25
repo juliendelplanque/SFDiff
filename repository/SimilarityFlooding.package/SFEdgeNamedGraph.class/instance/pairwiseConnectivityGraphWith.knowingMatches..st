@@ -7,7 +7,7 @@ pairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: aDictiona
 		(aDictionary includesAssociation: edge from -> edge to)
 			ifTrue: [ 
 				graph addEdge:
-					(SFNamedEdge
+					(SFEdge
 						from: (SFNode base: edge from target: (aDictionary at: edge from))
 						to: (SFNode base: edge to target: (aDictionary at: edge to))
 						named: edge name) ].
@@ -17,7 +17,7 @@ pairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: aDictiona
 					select: [ :otherEdge | 
 						edge name = otherEdge name ]
 					thenCollect: [ :otherEdge |
-						SFNamedEdge
+						SFEdge
 							from: (SFNode base: edge from target: otherEdge from)
 							to: (SFNode base: edge to target: otherEdge to)
 							named: edge name ])) do: [ :e | graph addEdge: e ] ] ]  displayingProgress: 'Building pairwise connectivity graph'.
