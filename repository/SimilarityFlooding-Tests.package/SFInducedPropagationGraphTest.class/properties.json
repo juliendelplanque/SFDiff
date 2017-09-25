@@ -1,16 +1,13 @@
 {
-	"category" : "SimilarityFlooding-Tests",
-	"classinstvars" : [
-		 ],
 	"classtraitcomposition" : "SFTestResources classTrait",
-	"classvars" : [
-		 ],
-	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
+	"classvars" : [ ],
+	"instvars" : [ ],
 	"name" : "SFInducedPropagationGraphTest",
-	"pools" : [
-		 ],
+	"commentStamp" : "<historical>",
 	"super" : "TestCase",
 	"traitcomposition" : "SFTestResources",
-	"type" : "normal" }
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SimilarityFlooding-Tests"
+}
