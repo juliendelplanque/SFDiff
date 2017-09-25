@@ -26,7 +26,7 @@ orionPairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: matc
 				|from to|
 				from := SFNode base: edgeFrom target: (otherEdge from versionIn: targetModel).
 				to := SFNode base: edgeTo target: (otherEdge to versionIn: targetModel).
-				pcgEdges add: (SFNamedEdge from: from to: to named: edge name).
+				pcgEdges add: (SFEdge from: from to: to named: edge name).
 				pcgNodes
 					add: from;
 					add: to ] ].
