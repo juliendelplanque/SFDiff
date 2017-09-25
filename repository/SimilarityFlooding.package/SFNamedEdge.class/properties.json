@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"name",
-		"isForComposition"
-	],
+	"instvars" : [ ],
 	"name" : "SFNamedEdge",
 	"type" : "normal"
 }

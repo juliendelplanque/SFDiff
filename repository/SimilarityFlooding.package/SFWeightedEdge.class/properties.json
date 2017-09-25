@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"weight"
-	],
+	"instvars" : [ ],
 	"name" : "SFWeightedEdge",
 	"type" : "normal"
 }
