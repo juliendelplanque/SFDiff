@@ -9,7 +9,7 @@ recursiveBuildFromModelEntities: famixEntities
 					(from isNotNil and: [ to isNotNil ])
 						ifTrue: [ graph
 								addEdge:
-									(SFNamedEdge
+									(SFEdge
 										from: from
 										to: to
 										named: from className , to className
