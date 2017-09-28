@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "SimilarityFlooding-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"store"
+	],
+	"name" : "SFPCGEdgesStoreTest",
+	"type" : "normal"
+}
