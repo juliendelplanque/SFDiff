@@ -1,5 +1,7 @@
 # SFDiff
-This project is an implementation of the Similarity Flooding algorithm as defined by Sergey Melnik, Hector Garcia-Molina, and Erhard Rahm in 'Similarity flooding: A versatile graph matching algorithm and its application to schema matching' and in the technical report associated.
+This project provides
+- An implementation of the Similarity Flooding algorithm as defined by Sergey Melnik, Hector Garcia-Molina, and Erhard Rahm in 'Similarity flooding: A versatile graph matching algorithm and its application to schema matching' and in the technical report associated.
+- The implementation of SFDiff, an algorithm based on the Similarity Flooding algorithm to compute the difference between two FAMIX models. This implementation comes with some optimizations allowing to process bigger models. 
 
 The implementation has been realised in [Pharo](http://pharo.org/) 6, more specifically, inside the [Moose](http://www.moosetechnology.org) 6.1 environment.
 
@@ -26,7 +28,7 @@ Classes are distributed in four tags:
 - *GraphBuilder* which contains classes to build input graphs for SimilarityFlooding from MooseModels
 - *Traits* which contains traits shared along multiple classes in the package
 
-`SimilarityFlooding-Diff` contains the implementation of *SFDiff*. 
+`SimilarityFlooding-Diff` contains the implementation of *SFDiff*.
 
 ### Code contribution
 To contribute via a bug fix/enhancement to this project, please use GitFile tree.
@@ -44,4 +46,3 @@ Repeat 6. and 7. for each modification you want to apply.
 
 ### Open an issue
 If you detect any bug in this project, please open an issue with a complete description of the bug you encountered.
-
