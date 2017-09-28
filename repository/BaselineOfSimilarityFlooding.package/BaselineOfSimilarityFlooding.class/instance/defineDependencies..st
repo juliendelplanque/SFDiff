@@ -17,5 +17,5 @@ defineDependencies: spec
 			spec
 				className: 'ConfigurationOfOrionMerge';
 				version: #development;
-				repository: 'http://smalltalkhub.com/mc/Moose/OrionMerge/main' ];
+				repository: 'http://smalltalkhub.com/mc/Moose/Orion/main' ];
 		yourself
