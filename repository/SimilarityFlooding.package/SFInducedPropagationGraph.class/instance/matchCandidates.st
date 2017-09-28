@@ -1,10 +1,8 @@
 accessing-computed
 matchCandidates
 	"Returns the list of match candidates."
-	^ (self sigmaValues associations)
-		collect: [ :association |
-			SFMatchCandidate new
-				baseEntity: association key baseEntity;
-				targetEntity: association key targetEntity;
-				sigmaValue: association value;
-				yourself ].
+	^ Array streamContents: [ :stream |
+		self sigmaValues associationsDo: [ :association |
+			stream << (association head
+							sigmaValue: association tail;
+							yourself) ] ]
