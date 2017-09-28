@@ -1,3 +1,9 @@
 accessing-computed
 nodes
-	^ (self edges collect: [ :edge | {edge from . edge to} ]) flattened asSet
+	^ self edges
+		inject: Set new
+		into: [ :set :edge |
+			set
+				add: edge from;
+				add: edge to;
+				yourself ]
