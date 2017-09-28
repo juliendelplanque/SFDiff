@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "JulienDelplanque 10/14/2016 13:47",
-	"super" : "SFBaseTargetHolder",
+	"commentStamp" : "JulienDelplanque 10/21/2016 10:11",
+	"super" : "Object",
 	"category" : "SimilarityFlooding-DataStructures",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"baseEntity",
+		"targetEntity",
 		"sigmaValue"
 	],
 	"name" : "SFMatchCandidate",

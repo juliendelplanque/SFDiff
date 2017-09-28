@@ -1,3 +1,2 @@
-I am a candidate for a match between two entities.
-
-I am part of the result of a similarity flooding on a SFInducedPropagationGraph.
+I am an object that hold a base and a target entity.
+That's all.

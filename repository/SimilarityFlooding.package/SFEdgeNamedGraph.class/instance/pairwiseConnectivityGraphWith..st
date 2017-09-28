@@ -7,7 +7,7 @@ pairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph
 			select: [ :otherEdge | edge name = otherEdge name ]
 			thenCollect: [ :otherEdge |
 				SFEdge
-					from: (SFNode base: edge from target: otherEdge from)
-					to: (SFNode base: edge to target: otherEdge to)
+					from: (SFMatchCandidate base: edge from target: otherEdge from)
+					to: (SFMatchCandidate base: edge to target: otherEdge to)
 					named: edge name ])) do: [ :e | graph addEdge: e ] ].
 	^ graph
