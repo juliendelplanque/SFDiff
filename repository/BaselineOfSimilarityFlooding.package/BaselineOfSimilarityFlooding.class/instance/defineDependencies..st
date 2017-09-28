@@ -15,7 +15,7 @@ defineDependencies: spec
 				loads: 'Core' ];
 		project: 'Orion' with: [ 
 			spec
-				className: 'ConfigurationOfOrion';
+				className: 'ConfigurationOfOrionMerge';
 				version: #development;
-				repository: 'http://smalltalkhub.com/mc/Moose/Orion/main' ];
+				repository: 'http://smalltalkhub.com/mc/Moose/OrionMerge/main' ];
 		yourself
