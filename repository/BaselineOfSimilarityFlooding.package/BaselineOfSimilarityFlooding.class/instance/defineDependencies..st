@@ -13,4 +13,9 @@ defineDependencies: spec
 				version: #development;
 				repository: 'http://smalltalkhub.com/mc/Moose/FamixDiff/main';
 				loads: 'Core' ];
+		project: 'Orion' with: [ 
+			spec
+				className: 'ConfigurationOfOrion';
+				version: #development;
+				repository: 'http://smalltalkhub.com/mc/Moose/Orion/main' ];
 		yourself
