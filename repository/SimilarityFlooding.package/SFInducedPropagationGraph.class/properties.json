@@ -12,7 +12,6 @@
 		"epsilon",
 		"iterationCount",
 		"maximalIterationCount",
-		"nodes",
 		"initialSigmaValueBlock",
 		"sigmaValueTransmissionBlock"
 	],
