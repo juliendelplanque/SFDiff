@@ -1,3 +1,0 @@
-accessing
-neighbourhoodDict
-	^ neighbourhoodDict

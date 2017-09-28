@@ -8,13 +8,13 @@
 	"instvars" : [
 		"sigmaValues",
 		"initialSigmaValues",
-		"sigmaValueBlock",
 		"delta",
 		"epsilon",
 		"iterationCount",
 		"maximalIterationCount",
-		"neighbourhoodDict",
-		"nodes"
+		"nodes",
+		"initialSigmaValueBlock",
+		"sigmaValueTransmissionBlock"
 	],
 	"name" : "SFInducedPropagationGraph",
 	"type" : "normal"

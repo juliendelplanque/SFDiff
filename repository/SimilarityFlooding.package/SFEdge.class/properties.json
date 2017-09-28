@@ -8,9 +8,10 @@
 	"instvars" : [
 		"from",
 		"to",
-		"weight",
 		"name",
-		"isForComposition"
+		"isForComposition",
+		"fromToWeight",
+		"toFromWeight"
 	],
 	"name" : "SFEdge",
 	"type" : "normal"

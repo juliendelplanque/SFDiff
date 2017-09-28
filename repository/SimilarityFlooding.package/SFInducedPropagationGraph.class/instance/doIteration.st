@@ -3,8 +3,22 @@ doIteration
 	| newSigmaValues maxSigma |
 	"Compute new sigma values for each node."
 	newSigmaValues := Dictionary new.
-	self nodes do: [ :node |
-		newSigmaValues at: node put: (self sigmaValueBlock value: node value: self) ].
+	self edges do: [ :edge |
+		newSigmaValues
+			at: edge from
+			put: (self sigmaValueTransmissionBlock valueWithArguments: {
+						(newSigmaValues at: edge from ifAbsentPut: [ self initialSigmaValueBlock value: edge from value: self ]).
+						edge to.
+						edge from.
+						edge toFromWeight.
+						self });
+			at: edge to
+			put: (self sigmaValueTransmissionBlock valueWithArguments: {
+						(newSigmaValues at: edge to ifAbsentPut: [ self initialSigmaValueBlock value: edge to value: self ]).
+						edge from.
+						edge to.
+						edge fromToWeight.
+						self }) ].
 	
 	"Normalize new sigmas."
 	maxSigma := newSigmaValues values max.

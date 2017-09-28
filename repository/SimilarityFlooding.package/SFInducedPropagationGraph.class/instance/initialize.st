@@ -6,5 +6,4 @@ initialize
 		epsilon: self defaultEpsilon;
 		maximalIterationCount: self defaultMaximalIterationCount;
 		useBasicFormula.
-	iterationCount := 0.
-	neighbourhoodDict := Dictionary new
+	iterationCount := 0

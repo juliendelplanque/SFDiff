@@ -1,0 +1,3 @@
+accessing
+sigmaValueTransmissionBlock
+	^ sigmaValueTransmissionBlock
