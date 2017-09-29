@@ -12,10 +12,10 @@ defineDependencies: spec
 				className: 'ConfigurationOfFamixDiff';
 				version: #development;
 				repository: 'http://smalltalkhub.com/mc/Moose/FamixDiff/main';
-				loads: 'Core' ]";
+				loads: 'Core' ];
 		project: 'Orion' with: [ 
 			spec
-				className: 'ConfigurationOfOrionMerge';
+				className: 'ConfigurationOfOrion';
 				version: #development;
-				repository: 'http://smalltalkhub.com/mc/Moose/Orion/main' ];"
+				repository: 'http://smalltalkhub.com/mc/Moose/Orion/main' ];
 		yourself
