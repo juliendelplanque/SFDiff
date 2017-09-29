@@ -1,0 +1,184 @@
+ - 2691 tallies, 2691 msec.
+
+**Tree**
+--------------------------------
+Process: (40s) Morphic UI Process: nil
+--------------------------------
+84.6% {2276ms} SFDiffForOrion(SFDiff)>>computeDiff
+  71.1% {1913ms} SFDiffForOrion(SFDiff)>>doSFDiffWith:
+    |38.0% {1023ms} SFDiffForOrion>>buildPairwiseConnectivityGraphFrom:and:knowingMatches:
+    |  |38.0% {1023ms} BlockClosure>>timeToRun
+    |  |  38.0% {1023ms} Time class>>millisecondsToRun:
+    |  |    38.0% {1023ms} Time class>>microsecondsToRun:
+    |  |      38.0% {1023ms} SFDiffForOrion>>buildPairwiseConnectivityGraphFrom:and:knowingMatches:
+    |  |        38.0% {1023ms} SFEdgeNamedGraph>>orionPairwiseConnectivityGraphWith:knowingMatches:baseModel:targetModel:
+    |  |          22.6% {607ms} OrderedCollection>>reject:
+    |  |            |22.1% {594ms} SFEdgeNamedGraph>>orionPairwiseConnectivityGraphWith:knowingMatches:baseModel:targetModel:
+    |  |            |  20.0% {539ms} Array(SequenceableCollection)>>includes:
+    |  |            |    |20.0% {539ms} Array(SequenceableCollection)>>indexOf:
+    |  |            |    |  20.0% {539ms} Array(SequenceableCollection)>>indexOf:ifAbsent:
+    |  |            |    |    20.0% {539ms} Array(SequenceableCollection)>>indexOf:startingAt:ifAbsent:
+    |  |            |    |      14.2% {382ms} primitives
+    |  |            |    |      5.8% {157ms} Association>>=
+    |  |            |    |        4.1% {110ms} primitives
+    |  |            |    |        1.7% {47ms} Association(LookupKey)>>=
+    |  |            |  1.8% {49ms} Set>>add:
+    |  |            |    1.7% {46ms} Set>>scanFor:
+    |  |            |      1.1% {30ms} primitives
+    |  |          15.1% {407ms} OrderedCollection>>do:
+    |  |            15.1% {405ms} SFEdgeNamedGraph>>orionPairwiseConnectivityGraphWith:knowingMatches:baseModel:targetModel:
+    |  |              8.6% {232ms} SFPairwiseConnectivityGraph>>addEdge:
+    |  |                |8.5% {230ms} SFPCGEdgesStore>>addEdge:
+    |  |                |  4.9% {133ms} Dictionary>>at:
+    |  |                |    |3.9% {106ms} Dictionary>>at:ifAbsent:
+    |  |                |    |  2.7% {74ms} Dictionary(HashedCollection)>>findElementOrNil:
+    |  |                |    |    |2.6% {69ms} Dictionary>>scanFor:
+    |  |                |    |  1.2% {32ms} primitives
+    |  |                |  2.3% {62ms} Dictionary>>includesKey:
+    |  |                |    2.0% {53ms} Dictionary>>scanFor:
+    |  |              6.2% {166ms} OrderedCollection>>do:
+    |  |                6.1% {164ms} SFEdgeNamedGraph>>orionPairwiseConnectivityGraphWith:knowingMatches:baseModel:targetModel:
+    |  |                  3.2% {86ms} Set>>add:
+    |  |                    |3.1% {83ms} Set>>scanFor:
+    |  |                    |  1.6% {43ms} primitives
+    |  |                    |  1.2% {33ms} SFMatchCandidate>>=
+    |  |                  1.7% {45ms} ORMethod>>versionIn:
+    |  |                    1.2% {31ms} ORStorage>>atID:ifAbsent:
+    |31.3% {842ms} BlockClosure>>timeToRun
+    |  |31.3% {842ms} Time class>>millisecondsToRun:
+    |  |  31.3% {842ms} Time class>>microsecondsToRun:
+    |  |    31.3% {842ms} SFDiffForOrion(SFDiff)>>doSFDiffWith:
+    |  |      26.9% {723ms} SFInducedPropagationGraph>>similarityFlooding
+    |  |        |21.1% {569ms} SFInducedPropagationGraph>>doIteration
+    |  |        |  |20.5% {551ms} OrderedCollection>>do:
+    |  |        |  |  20.1% {540ms} SFInducedPropagationGraph>>doIteration
+    |  |        |  |    11.0% {296ms} SFInducedPropagationGraph>>useFormulaC
+    |  |        |  |      |4.5% {122ms} SFInducedPropagationGraph>>sigmaValueOf:
+    |  |        |  |      |  |3.6% {96ms} Dictionary>>at:
+    |  |        |  |      |  |  3.5% {94ms} Dictionary>>at:ifAbsent:
+    |  |        |  |      |  |    2.5% {68ms} Dictionary(HashedCollection)>>findElementOrNil:
+    |  |        |  |      |  |      2.5% {68ms} Dictionary>>scanFor:
+    |  |        |  |      |4.0% {107ms} SFInducedPropagationGraph>>initialSigmaValueOf:
+    |  |        |  |      |  |3.7% {99ms} Dictionary>>at:
+    |  |        |  |      |  |  3.7% {99ms} Dictionary>>at:ifAbsent:
+    |  |        |  |      |  |    3.1% {83ms} Dictionary(HashedCollection)>>findElementOrNil:
+    |  |        |  |      |  |      3.0% {81ms} Dictionary>>scanFor:
+    |  |        |  |      |  |        1.4% {38ms} SFMatchCandidate>>=
+    |  |        |  |      |2.0% {55ms} primitives
+    |  |        |  |    4.6% {125ms} Dictionary>>at:put:
+    |  |        |  |      |3.3% {90ms} Dictionary(HashedCollection)>>findElementOrNil:
+    |  |        |  |      |  3.3% {90ms} Dictionary>>scanFor:
+    |  |        |  |      |    1.3% {34ms} SFMatchCandidate>>=
+    |  |        |  |      |    1.3% {34ms} SFMatchCandidate>>hash
+    |  |        |  |    4.2% {112ms} Dictionary>>at:ifAbsentPut:
+    |  |        |  |      3.8% {103ms} Dictionary>>at:ifAbsent:
+    |  |        |  |        2.6% {71ms} Dictionary(HashedCollection)>>findElementOrNil:
+    |  |        |  |          2.5% {66ms} Dictionary>>scanFor:
+    |  |        |  |            1.0% {28ms} SFMatchCandidate>>=
+    |  |        |5.7% {154ms} SFInducedPropagationGraph(SFEdgeBasedGraph)>>nodes
+    |  |        |  5.7% {154ms} OrderedCollection(Collection)>>inject:into:
+    |  |        |    5.7% {154ms} OrderedCollection>>do:
+    |  |        |      5.2% {141ms} OrderedCollection(Collection)>>inject:into:
+    |  |        |        4.9% {132ms} SFInducedPropagationGraph(SFEdgeBasedGraph)>>nodes
+    |  |        |          4.8% {130ms} Set>>add:
+    |  |        |            4.0% {107ms} Set>>scanFor:
+    |  |        |              1.7% {47ms} SFMatchCandidate>>=
+    |  |        |              1.4% {39ms} primitives
+    |  |      4.4% {119ms} SFDiffForOrion(SFDiff)>>buildInducedPropagationGraph:
+    |  |        4.4% {119ms} SFPairwiseConnectivityGraph>>asInducedPropagationGraph
+    |  |          4.4% {119ms} SFPairwiseConnectivityGraph>>asInducedPropagationGraphWithFromToBlock:toFromBlock:
+    |  |            4.4% {119ms} OrderedCollection>>do:
+    |  |              4.3% {117ms} SFPairwiseConnectivityGraph>>asInducedPropagationGraphWithFromToBlock:toFromBlock:
+    |  |                3.8% {103ms} SFPairwiseConnectivityGraph>>asInducedPropagationGraph
+    |  |                  1.4% {38ms} SFPairwiseConnectivityGraph>>incomingEdgesLabelled:forNode:
+    |  |                    |1.3% {36ms} SFPCGEdgesStore>>edgesOf:labelled:
+    |  |                    |  1.3% {36ms} Dictionary>>at:ifAbsent:
+    |  |                  1.2% {32ms} SFPairwiseConnectivityGraph>>outgoingEdgesLabelled:forNode:
+    |  |                    |1.2% {32ms} SFPCGEdgesStore>>edgesOf:labelled:
+    |  |                    |  1.2% {32ms} Dictionary>>at:ifAbsent:
+    |  |                  1.2% {31ms} OrderedCollection>>size
+    |1.4% {38ms} SFInducedPropagationGraph(SFEdgeBasedGraph)>>nodes
+    |  1.4% {38ms} OrderedCollection(Collection)>>inject:into:
+    |    1.4% {38ms} OrderedCollection>>do:
+    |      1.3% {34ms} OrderedCollection(Collection)>>inject:into:
+    |        1.3% {34ms} SFInducedPropagationGraph(SFEdgeBasedGraph)>>nodes
+    |          1.3% {34ms} Set>>add:
+  13.5% {363ms} BlockClosure>>timeToRun
+    13.5% {363ms} Time class>>millisecondsToRun:
+      13.5% {363ms} Time class>>microsecondsToRun:
+        13.5% {363ms} SFDiffForOrion(SFDiff)>>computeDiff
+          13.3% {359ms} SFDiffForOrion(SFDiff)>>buildChangesFrom:withKnownMatches:
+            10.0% {270ms} Array(SequenceableCollection)>>reject:
+              |10.0% {270ms} Array class(SequenceableCollection class)>>new:streamContents:
+              |  10.0% {270ms} Array(SequenceableCollection)>>reject:
+              |    9.8% {265ms} SFDiffForOrion(SFDiff)>>buildChangesFrom:withKnownMatches:
+              |      9.8% {265ms} Array(Collection)>>anySatisfy:
+              |        9.8% {265ms} Array(SequenceableCollection)>>do:
+              |          9.8% {265ms} Array(Collection)>>anySatisfy:
+              |            9.7% {260ms} SFDiffForOrion(SFDiff)>>buildChangesFrom:withKnownMatches:
+              |              7.5% {203ms} SFDiffForOrion>>entity:in:
+              |                |2.6% {69ms} ORMethod>>versionIn:
+              |                |  |1.5% {40ms} ORMethod>>currentContext:
+              |                |  |  |1.3% {34ms} ORDefaultState>>currentContext:
+              |                |  |  |  1.3% {34ms} SmallDictionary>>at:put:
+              |                |  |1.1% {29ms} ORStorage>>atID:ifAbsent:
+              |                |1.6% {44ms} ORLocalVariable>>versionIn:
+              |                |1.6% {44ms} ORParameter>>versionIn:
+              |                |  1.0% {28ms} ORStorage>>atID:ifAbsent:
+              |              1.3% {34ms} Association>>head
+              |                1.3% {34ms} ORAttribute(Object)>>isKindOf:
+              |                  1.1% {30ms} ORAttribute class(Behavior)>>inheritsFrom:
+            3.2% {85ms} SFDiffForOrion(SFDiff)>>generateAssociationChanges
+              3.2% {85ms} SFAssociationsDiffForOrion class(SFAssociationsDiff class)>>baseModel:targetModel:entitiesVersionChanges:
+                3.2% {85ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>computeDiff
+                  1.6% {44ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndAddChanges
+                    |1.6% {44ms} OrderedCollection>>do:
+                    |  1.6% {44ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndAddChanges
+                    |    1.6% {44ms} BlockClosure>>on:do:
+                    |      1.6% {44ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndAddChanges
+                  1.5% {41ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndRemovalChanges
+                    1.4% {38ms} OrderedCollection>>do:
+                      1.4% {38ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndRemovalChanges
+                        1.4% {38ms} BlockClosure>>on:do:
+                          1.4% {38ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndRemovalChanges
+--------------------------------
+Process: other processes
+--------------------------------
+15.3% {411ms} InputEventFetcher>>installEventLoop
+  15.3% {411ms} InputEventFetcher>>eventLoop
+    15.3% {411ms} InputEventFetcher>>waitForInput
+
+**Leaves**
+15.3% {412ms} Array(SequenceableCollection)>>indexOf:startingAt:ifAbsent:
+15.3% {411ms} InputEventFetcher>>waitForInput
+10.2% {274ms} SFMatchCandidate>>=
+5.1% {136ms} Set>>scanFor:
+5.0% {134ms} Dictionary>>scanFor:
+4.3% {116ms} Dictionary>>at:ifAbsent:
+4.1% {110ms} Association>>=
+3.0% {81ms} ORStorage>>atID:ifAbsent:
+2.6% {71ms} ORInvocation class(Object)>>hash
+2.1% {57ms} ByteString(String)>>=
+2.0% {55ms} SFInducedPropagationGraph>>useFormulaC
+1.8% {49ms} ByteSymbol(Symbol)>>=
+1.7% {47ms} Association(LookupKey)>>=
+1.7% {45ms} ORMethod(ProtoObject)>>identityHash
+1.6% {44ms} ORClass class(Behavior)>>inheritsFrom:
+1.5% {40ms} SFMatchCandidate>>hash
+1.3% {34ms} OrderedCollection>>do:
+1.2% {31ms} OrderedCollection>>size
+1.1% {29ms} SFInducedPropagationGraph>>sigmaValueOf:
+1.1% {29ms} Dictionary>>at:
+1.0% {28ms} HashTable>>itemFor:atIndex:
+
+**Memory**
+	old			-33,554,432 bytes
+	young		+32,903,224 bytes
+	used		-651,208 bytes
+	free		-32,903,224 bytes
+
+**GCs**
+	full			1 totalling 410ms (15.0% uptime), avg 410.0ms
+	incr		233 totalling 186ms (7.0% uptime), avg 1.0ms
+	tenures		673,626 (avg 0 GCs/tenure)
+	root table	0 overflows

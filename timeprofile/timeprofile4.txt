@@ -1,0 +1,163 @@
+ - 264 tallies, 264 msec.
+
+**Tree**
+--------------------------------
+Process: (40s) Morphic UI Process: nil
+--------------------------------
+97.7% {258ms} SFDiffForOrion(SFDiff)>>computeDiff
+  65.2% {172ms} SFDiffForOrion(SFDiff)>>doSFDiffWith:
+    |64.4% {170ms} SFDiffForOrion>>buildPairwiseConnectivityGraphFrom:and:knowingMatches:
+    |  64.4% {170ms} BlockClosure>>timeToRun
+    |    64.4% {170ms} Time class>>millisecondsToRun:
+    |      64.4% {170ms} Time class>>microsecondsToRun:
+    |        64.4% {170ms} SFDiffForOrion>>buildPairwiseConnectivityGraphFrom:and:knowingMatches:
+    |          64.4% {170ms} SFEdgeNamedGraph>>orionPairwiseConnectivityGraphWith:knowingMatches:baseModel:targetModel:
+    |            34.8% {92ms} OrderedCollection>>do:
+    |              |34.8% {92ms} SFEdgeNamedGraph>>orionPairwiseConnectivityGraphWith:knowingMatches:baseModel:targetModel:
+    |              |  33.7% {89ms} OrderedCollection>>do:
+    |              |    33.7% {89ms} SFEdgeNamedGraph>>orionPairwiseConnectivityGraphWith:knowingMatches:baseModel:targetModel:
+    |              |      26.1% {69ms} Set>>add:
+    |              |        |23.5% {62ms} Set>>scanFor:
+    |              |        |  |12.1% {32ms} SFMatchCandidate>>=
+    |              |        |  |10.6% {28ms} primitives
+    |              |        |1.9% {5ms} primitives
+    |              |      4.2% {11ms} ORMethod>>versionIn:
+    |              |        |3.4% {9ms} ORStorage>>atID:ifAbsent:
+    |              |        |  2.7% {7ms} HashTable>>at:ifAbsent:
+    |              |        |    1.5% {4ms} HashTable>>itemFor:atIndex:
+    |              |      1.9% {5ms} SFEdge class>>from:to:named:
+    |            26.1% {69ms} OrderedCollection>>reject:
+    |              |26.1% {69ms} SFEdgeNamedGraph>>orionPairwiseConnectivityGraphWith:knowingMatches:baseModel:targetModel:
+    |              |  24.2% {64ms} Set>>add:
+    |              |    |22.7% {60ms} Set>>scanFor:
+    |              |    |  13.6% {36ms} SFMatchCandidate>>=
+    |              |    |  9.1% {24ms} primitives
+    |              |  1.9% {5ms} Dictionary>>includesKey:
+    |            3.4% {9ms} Set(Collection)>>\
+    |              3.4% {9ms} Set>>difference:
+    |                3.4% {9ms} Set>>do:
+    |                  3.4% {9ms} Set>>difference:
+    |                    3.4% {9ms} Set>>remove:ifAbsent:
+    |                      3.4% {9ms} Set>>fixCollisionsFrom:
+    |                        3.4% {9ms} Set>>scanFor:
+    |                          2.7% {7ms} primitives
+  32.6% {86ms} BlockClosure>>timeToRun
+    32.6% {86ms} Time class>>millisecondsToRun:
+      32.6% {86ms} Time class>>microsecondsToRun:
+        32.6% {86ms} SFDiffForOrion(SFDiff)>>computeDiff
+          31.1% {82ms} SFDiffForOrion(SFDiff)>>buildChangesFrom:withKnownMatches:
+            |26.9% {71ms} SFDiffForOrion(SFDiff)>>generateAssociationChanges
+            |  |26.9% {71ms} SFAssociationsDiffForOrion class(SFAssociationsDiff class)>>baseModel:targetModel:entitiesVersionChanges:
+            |  |  26.9% {71ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>computeDiff
+            |  |    14.0% {37ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndAddChanges
+            |  |      |14.0% {37ms} OrderedCollection>>do:
+            |  |      |  14.0% {37ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndAddChanges
+            |  |      |    14.0% {37ms} BlockClosure>>on:do:
+            |  |      |      14.0% {37ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndAddChanges
+            |  |      |        6.4% {17ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>findBaseAssociationCorrespondingTo:withFromChange:toChanges:
+            |  |      |          |6.4% {17ms} OrderedCollection(Collection)>>detect:ifNone:
+            |  |      |          |  6.4% {17ms} OrderedCollection(Collection)>>detect:ifFound:ifNone:
+            |  |      |          |    6.4% {17ms} OrderedCollection>>do:
+            |  |      |          |      6.4% {17ms} OrderedCollection(Collection)>>detect:ifFound:ifNone:
+            |  |      |          |        6.4% {17ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>findBaseAssociationCorrespondingTo:withFromChange:toChanges:
+            |  |      |          |          1.5% {4ms} ORAccess(FAMIXAccess)>>to
+            |  |      |          |            1.5% {4ms} ORAccess>>variable
+            |  |      |          |              1.5% {4ms} ORAccess>>currentContext
+            |  |      |          |                1.5% {4ms} ORDefaultState>>currentContext
+            |  |      |          |                  1.5% {4ms} SmallDictionary>>at:ifAbsentPut:
+            |  |      |          |                    1.5% {4ms} SmallDictionary>>findIndexForKey:
+            |  |      |          |                      1.5% {4ms} Array(SequenceableCollection)>>indexOf:
+            |  |      |          |                        1.5% {4ms} Array(SequenceableCollection)>>indexOf:ifAbsent:
+            |  |      |          |                          1.5% {4ms} Array(SequenceableCollection)>>indexOf:startingAt:ifAbsent:
+            |  |      |          |                            1.5% {4ms} ByteSymbol(Symbol)>>=
+            |  |      |        4.2% {11ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>changeWithTargetEntityEqualsTo:
+            |  |      |          |4.2% {11ms} OrderedCollection(Collection)>>detect:
+            |  |      |          |  4.2% {11ms} OrderedCollection(Collection)>>detect:ifNone:
+            |  |      |          |    4.2% {11ms} OrderedCollection(Collection)>>detect:ifFound:ifNone:
+            |  |      |          |      4.2% {11ms} OrderedCollection>>do:
+            |  |      |          |        4.2% {11ms} OrderedCollection(Collection)>>detect:ifFound:ifNone:
+            |  |      |          |          4.2% {11ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>changeWithTargetEntityEqualsTo:
+            |  |      |          |            4.2% {11ms} SFAssociationsDiffForOrion>>entity:in:
+            |  |      |          |              2.7% {7ms} ORMethod>>versionIn:
+            |  |      |          |                |2.7% {7ms} ORMethod>>currentContext:
+            |  |      |          |                |  2.7% {7ms} ORDefaultState>>currentContext:
+            |  |      |          |                |    2.7% {7ms} SmallDictionary>>at:put:
+            |  |      |          |                |      2.7% {7ms} SmallDictionary>>findIndexForKey:
+            |  |      |          |                |        2.7% {7ms} Array(SequenceableCollection)>>indexOf:
+            |  |      |          |                |          2.7% {7ms} Array(SequenceableCollection)>>indexOf:ifAbsent:
+            |  |      |          |                |            2.7% {7ms} Array(SequenceableCollection)>>indexOf:startingAt:ifAbsent:
+            |  |      |          |                |              1.9% {5ms} ByteSymbol(Symbol)>>=
+            |  |      |          |              1.5% {4ms} ORParameter>>versionIn:
+            |  |      |        2.7% {7ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>changesWithTargetEntityIncludedIn:
+            |  |      |          2.7% {7ms} OrderedCollection>>select:
+            |  |      |            2.7% {7ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>changesWithTargetEntityIncludedIn:
+            |  |      |              1.5% {4ms} SFAssociationsDiffForOrion>>entity:in:
+            |  |    12.9% {34ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndRemovalChanges
+            |  |      12.9% {34ms} OrderedCollection>>do:
+            |  |        12.9% {34ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndRemovalChanges
+            |  |          12.9% {34ms} BlockClosure>>on:do:
+            |  |            12.9% {34ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>versionAndRemovalChanges
+            |  |              7.2% {19ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>findTargetAssociationCorrespondingTo:withFromChange:toChanges:
+            |  |                |7.2% {19ms} OrderedCollection(Collection)>>detect:ifNone:
+            |  |                |  7.2% {19ms} OrderedCollection(Collection)>>detect:ifFound:ifNone:
+            |  |                |    7.2% {19ms} OrderedCollection>>do:
+            |  |                |      7.2% {19ms} OrderedCollection(Collection)>>detect:ifFound:ifNone:
+            |  |                |        7.2% {19ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>findTargetAssociationCorrespondingTo:withFromChange:toChanges:
+            |  |                |          1.9% {5ms} OrderedCollection>>collect:
+            |  |                |          1.9% {5ms} ORAccess(FAMIXAccess)>>to
+            |  |                |            1.9% {5ms} ORAccess>>variable
+            |  |              3.4% {9ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>changesWithBaseEntityIncludedIn:
+            |  |                |3.4% {9ms} OrderedCollection>>select:
+            |  |                |  2.7% {7ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>changesWithBaseEntityIncludedIn:
+            |  |                |    1.9% {5ms} SFAssociationsDiffForOrion>>entity:in:
+            |  |              2.3% {6ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>changeWithBaseEntityEqualsTo:
+            |  |                2.3% {6ms} OrderedCollection(Collection)>>detect:
+            |  |                  2.3% {6ms} OrderedCollection(Collection)>>detect:ifNone:
+            |  |                    2.3% {6ms} OrderedCollection(Collection)>>detect:ifFound:ifNone:
+            |  |                      2.3% {6ms} OrderedCollection>>do:
+            |  |                        1.5% {4ms} OrderedCollection(Collection)>>detect:ifFound:ifNone:
+            |  |                          1.5% {4ms} SFAssociationsDiffForOrion(SFAssociationsDiff)>>changeWithBaseEntityEqualsTo:
+            |  |                            1.5% {4ms} SFAssociationsDiffForOrion>>entity:in:
+            |  |                              1.5% {4ms} ORMethod>>versionIn:
+            |1.9% {5ms} SFDiffForOrion>>generateRemovalChanges
+            |1.5% {4ms} Array(SequenceableCollection)>>reject:
+            |  1.5% {4ms} Array class(SequenceableCollection class)>>new:streamContents:
+            |    1.5% {4ms} Array(SequenceableCollection)>>reject:
+            |      1.5% {4ms} SFDiffForOrion(SFDiff)>>buildChangesFrom:withKnownMatches:
+            |        1.5% {4ms} Array(Collection)>>anySatisfy:
+            |          1.5% {4ms} Array(SequenceableCollection)>>do:
+            |            1.5% {4ms} Array(Collection)>>anySatisfy:
+            |              1.5% {4ms} SFDiffForOrion(SFDiff)>>buildChangesFrom:withKnownMatches:
+          1.5% {4ms} SFEqualEntitiesFinderForOrion(SFEqualEntitiesFinder)>>findEqualEntities
+--------------------------------
+Process: other processes
+--------------------------------
+1.5% {4ms} InputEventFetcher>>installEventLoop
+  1.5% {4ms} InputEventFetcher>>eventLoop
+    1.5% {4ms} InputEventFetcher>>waitForInput
+
+**Leaves**
+26.5% {70ms} SFMatchCandidate>>=
+23.1% {61ms} Set>>scanFor:
+11.7% {31ms} ByteSymbol(Symbol)>>=
+3.0% {8ms} ORStorage>>atID:ifAbsent:
+2.7% {7ms} Set>>add:
+2.7% {7ms} Array(SequenceableCollection)>>indexOf:startingAt:ifAbsent:
+1.9% {5ms} Array(SequenceableCollection)>>collect:
+1.9% {5ms} Dictionary>>includesKey:
+1.5% {4ms} ORParameter>>currentContext:
+1.5% {4ms} HashTable>>is:sameAs:
+1.5% {4ms} InputEventFetcher>>waitForInput
+1.5% {4ms} HashTable>>itemFor:atIndex:
+
+**Memory**
+	old			+0 bytes
+	young		-195,600 bytes
+	used		-195,600 bytes
+	free		+195,600 bytes
+
+**GCs**
+	full			0 totalling 0ms (0.0% uptime)
+	incr		29 totalling 13ms (5.0% uptime), avg 0.0ms
+	tenures		103,089 (avg 0 GCs/tenure)
+	root table	0 overflows
