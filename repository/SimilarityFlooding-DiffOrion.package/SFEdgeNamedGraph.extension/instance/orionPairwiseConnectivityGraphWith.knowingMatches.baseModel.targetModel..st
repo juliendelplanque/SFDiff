@@ -9,14 +9,14 @@ orionPairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: matc
 		| edgeFrom edgeTo |
 		edgeFrom := edge from versionIn: baseModel.
 		edgeTo := edge to versionIn: baseModel.
-		anotherSFEdgeNamedGraph edges select: [ :otherEdge | edge name = otherEdge name ] thenDo: [ :otherEdge |
-				|from to|
-				from := SFMatchCandidate base: edgeFrom target: (otherEdge from versionIn: targetModel).
-				to := SFMatchCandidate base: edgeTo target: (otherEdge to versionIn: targetModel).
-				pcgEdges add: (SFEdge from: from to: to named: edge name).
-				pcgNodes
-					add: from;
-					add: to ] ].
+		(anotherSFEdgeNamedGraph edgesLabelled: edge name) do: [ :otherEdge |
+			|from to|
+			from := SFMatchCandidate base: edgeFrom target: (otherEdge from versionIn: targetModel).
+			to := SFMatchCandidate base: edgeTo target: (otherEdge to versionIn: targetModel).
+			pcgEdges add: (SFEdge from: from to: to named: edge name).
+			pcgNodes
+				add: from;
+				add: to ] ].
 		"Prune edges and nodes incoherent with #matchesDict"
 		incoherentNodes := Set new.
 		pcgEdges := pcgEdges reject: [ :namedEdge |
