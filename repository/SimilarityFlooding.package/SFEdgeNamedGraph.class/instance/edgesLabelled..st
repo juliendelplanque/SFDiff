@@ -1,3 +1,3 @@
 accessing
 edgesLabelled: aString
-	^ self labelToEdgesDict at: aString ifAbsent: [ #() ]
+	^ self edges select: [ :e | e name = aString ]

@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "JulienDelplanque 10/2/2017 13:19",
-	"super" : "SFEdgeBasedGraph",
+	"commentStamp" : "JulienDelplanque 10/2/2017 13:22",
+	"super" : "SFEdgeNamedGraph",
 	"category" : "SimilarityFlooding-DataStructures",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"model"
+		"labelToEdgesDict"
 	],
-	"name" : "SFEdgeNamedGraph",
+	"name" : "SFEdgeNamedGraphWithLabelCache",
 	"type" : "normal"
 }
