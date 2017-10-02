@@ -1,3 +1,3 @@
-accessing
+accessing - time to run
 pairwiseTime
 	^ pairwiseTime
