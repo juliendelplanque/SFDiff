@@ -1,24 +1,3 @@
 pairwise connectivity graph
-pairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: aDictionary
-	| graph |
-	self halt: 'The logic used to prune nodes in the PCG is wrong.'.
-	graph := SFPairwiseConnectivityGraph new.
-	self edges do: [ :edge |
-		(aDictionary includesAssociation: edge from -> edge to)
-			ifTrue: [ 
-				graph addEdge:
-					(SFEdge
-						from: (SFMatchCandidate base: edge from target: (aDictionary at: edge from))
-						to: (SFMatchCandidate base: edge to target: (aDictionary at: edge to))
-						named: edge name) ].
-			((aDictionary includesKey: edge from ) or: [ aDictionary includes: edge to ])
-				ifFalse: [
-				((anotherSFEdgeNamedGraph edges
-					select: [ :otherEdge | 
-						edge name = otherEdge name ]
-					thenCollect: [ :otherEdge |
-						SFEdge
-							from: (SFMatchCandidate base: edge from target: otherEdge from)
-							to: (SFMatchCandidate base: edge to target: otherEdge to)
-							named: edge name ])) do: [ :e | graph addEdge: e ] ] ]  displayingProgress: 'Building pairwise connectivity graph'.
-	^ graph
+pairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: matchesDict
+	^ self pairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: matchesDict edgesAndNodesBuildingBlock: [ :baseGraph :targetGraph :pcgEdges :pcgNodes | self buildPCGEdgesAndNodesFrom: baseGraph and: targetGraph andStoreResultingEdgesIn: pcgEdges andResultingNodesIn: pcgNodes ]

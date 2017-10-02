@@ -1,3 +1,4 @@
 adding
 addAllEdges: aCollectionOfSFEdges
-	self edges addAll: aCollectionOfSFEdges
+	aCollectionOfSFEdges do: [ :aSFEdge |
+		self addEdge: aSFEdge ]

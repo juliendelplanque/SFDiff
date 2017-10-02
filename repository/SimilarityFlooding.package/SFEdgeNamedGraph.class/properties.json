@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"labelToEdgesDict"
+		"labelToEdgesDict",
+		"model"
 	],
 	"name" : "SFEdgeNamedGraph",
 	"type" : "normal"
