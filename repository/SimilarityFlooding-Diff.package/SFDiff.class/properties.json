@@ -19,7 +19,7 @@
 	],
 	"name" : "SFDiff",
 	"commentStamp" : "JulienDelplanque 10/26/2016 09:18",
-	"super" : "Object",
+	"super" : "SFAbstractDiff",
 	"traitcomposition" : "SFTFamixModelManipulator",
 	"type" : "normal",
 	"classinstvars" : [ ],
