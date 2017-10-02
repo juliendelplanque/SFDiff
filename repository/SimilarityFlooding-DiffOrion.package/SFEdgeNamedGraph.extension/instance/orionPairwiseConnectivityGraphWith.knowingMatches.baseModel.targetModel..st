@@ -1,7 +1,6 @@
 *SimilarityFlooding-DiffOrion
 orionPairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: matchesDict baseModel: baseModel targetModel: targetModel
 	| graph pcgEdges pcgNodes incoherentNodes |
-	self flag: 'To optimize if possible.'.
 	graph := SFPairwiseConnectivityGraph new.
 	pcgNodes := Set new.
 	pcgEdges := OrderedCollection new.
@@ -17,21 +16,10 @@ orionPairwiseConnectivityGraphWith: anotherSFEdgeNamedGraph knowingMatches: matc
 			pcgNodes
 				add: from;
 				add: to ] ].
-		"Prune edges and nodes incoherent with #matchesDict"
-		incoherentNodes := Set new.
-		pcgEdges := pcgEdges reject: [ :namedEdge |
-			|shouldReject|
-			shouldReject := false.
-			(matchesDict includesKey: namedEdge from baseEntity)
-				ifTrue: [ 
-					shouldReject := true.
-					incoherentNodes add: namedEdge from ].
-			(matchesDict includesKey: namedEdge to baseEntity)
-				ifTrue: [ 
-					shouldReject := true.
-					incoherentNodes add: namedEdge to ].
-			shouldReject ].
-	pcgNodes := pcgNodes \ incoherentNodes.
-	pcgEdges do: [ :e | graph addEdge: e ].
-	graph nodes: pcgNodes.
+	"Prune edges and incoherent nodes with #matchesDict"
+	incoherentNodes := Set new.
+	pcgEdges := self pruneEdges: pcgEdges accordingTo: matchesDict andPutIncoherentNodesIn: incoherentNodes.
 	^ graph
+		addAllEdges: pcgEdges;
+		nodes: pcgNodes \ incoherentNodes;
+		yourself
