@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	graph := SFEdgeNamedGraph new
+	"By default, uses SFEdgeNamedGraph."
+	self graphClass: SFEdgeNamedGraph.
