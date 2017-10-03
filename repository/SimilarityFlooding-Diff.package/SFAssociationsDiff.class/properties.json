@@ -3,11 +3,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"entitiesVersionChanges",
-		"baseModel",
 		"baseAssociations",
-		"targetModel",
-		"targetAssociations",
-		"changes"
+		"targetAssociations"
 	],
 	"name" : "SFAssociationsDiff",
 	"commentStamp" : "JulienDelplanque 3/13/2017 21:29",

@@ -1,11 +1,15 @@
 {
-	"commentStamp" : "JulienDelplanque 10/2/2017 14:56",
+	"commentStamp" : "JulienDelplanque 10/3/2017 14:26",
 	"super" : "Object",
 	"category" : "SimilarityFlooding-Diff-Diffs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"baseModel",
+		"targetModel",
+		"changes"
+	],
 	"name" : "SFAbstractDiff",
 	"type" : "normal"
 }

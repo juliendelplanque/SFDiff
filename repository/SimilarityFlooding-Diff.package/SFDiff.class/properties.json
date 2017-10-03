@@ -2,9 +2,6 @@
 	"classtraitcomposition" : "SFTFamixModelManipulator classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"baseModel",
-		"targetModel",
-		"changes",
 		"matchThreshold",
 		"inducedPropagationGraphFormulaSelector",
 		"candidateChooserClass",
